@@ -1,0 +1,202 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+$orange: #65C6BB;
+$grey: #787878;
+$lightgrey: #BBBBBB;
+$darkgrey: #575757;
+
+#wrap {
+  background-color: #fff;
+}
+
+#header {
+  font-size: 32px;
+  height: 40px;
+  background-color: #ededed;
+  padding-top: 25px;
+  text-align: center;
+}
+
+#maincontent {
+  background-attachment: fixed;
+  background-color: #000;
+  background-image: url("../images/header-6.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  height: 100vh;
+  font-size: 2em;
+  position: relative;
+  text-align: center;
+}
+
+#maincontent ul {
+  position: relative;
+  top: 5%;
+  transform: translateY(-5%);
+  margin: 0 auto;
+  background-color: transparent;
+}
+
+#maincontent li {
+  display: inline;
+  font-size: .6em;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  padding-right: .8em;
+  a {
+    background-color: transparent;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color .5s ease-in-out;
+    padding: .5em;
+    border-radius: .2em;
+  }
+
+  a:hover {
+    background-color: rgba(0, 0, 0, .3);
+  }
+}
+
+.productdesigner {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  background-color: transparent;
+  font-size: 2.5em;
+}
+
+.title {
+  font-size: 1.7em;
+  color: $grey;
+  font-weight: 400;
+  text-transform: uppercase;
+  background: none;
+  letter-spacing: .1em
+}
+
+.what-i-can {
+  padding-bottom: 2em;
+}
+
+
+#maincontent li:last-child {
+  padding-right: 0;
+}
+
+#aboutme {
+  display: block;
+}
+
+
+header {
+  background-color: transparent;
+  position: relative;
+  top: 45%;
+  transform: translateY(-45%);
+  word-spacing: .3em;
+  line-height: 2em;
+}
+
+#work {
+  text-align: center;
+  padding: 6em 0 6em 0;
+}
+
+#footer {
+  font-size: 5em;
+  padding: 5em;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  padding-bottom: 5em;
+}
+html {
+  box-sizing: border-box;
+  font-weight: 400;
+  font-family: 'Lato', sans-serif;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  background-color: #fff;
+}
+
+ul, li {
+  background-color: transparent;
+}
+
+.design, .develop, .photography {
+  color: #787878;
+  display: inline-block;
+  line-height: 1.2em;
+  margin: 2em;
+  text-align: center;
+  vertical-align: top;
+  width: 20%;
+  border: 1px solid $lightgrey;
+  padding: 2em 2em;
+  border-radius: .5em;
+
+  h1 {
+    font-size: 1.4em;
+    padding-bottom: 1em;
+    color: $orange;
+    letter-spacing: .1em;
+  }
+  h2 {
+    line-height: 1.7em;
+    font-size: 1.1em;
+  }
+
+  img {
+    padding-bottom: 1.5em;
+  }
+}
+
+#philosophy {
+  text-align: center;
+  background-attachment: fixed;
+  background-color: #000;
+  background-image: url("../images/header-3.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 6em 0 3em;
+
+  h1, h2 {
+    width: 30%;
+    background: none;
+    margin: 0 auto;
+    padding-bottom: 2em;
+    color: #fff;
+    font-size: 1.2em;
+    line-height: 1.5em;
+  }
+
+  h1 {
+    font-weight: 400;
+    font-style: italic;
+  }
+}
+
+.philosophy {
+  padding-bottom: 3em;
+  background: none;
+  color: #fff;
+
+}
+
+.author-quote {
+  background: none;
+}

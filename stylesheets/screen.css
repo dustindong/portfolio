@@ -1,0 +1,281 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 13, ../sass/screen.scss */
+#wrap {
+  background-color: #fff;
+}
+
+/* line 17, ../sass/screen.scss */
+#header {
+  font-size: 32px;
+  height: 40px;
+  background-color: #ededed;
+  padding-top: 25px;
+  text-align: center;
+}
+
+/* line 25, ../sass/screen.scss */
+#maincontent {
+  background-attachment: fixed;
+  background-color: #000;
+  background-image: url("../images/header-6.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  height: 100vh;
+  font-size: 2em;
+  position: relative;
+  text-align: center;
+}
+
+/* line 39, ../sass/screen.scss */
+#maincontent ul {
+  position: relative;
+  top: 5%;
+  transform: translateY(-5%);
+  margin: 0 auto;
+  background-color: transparent;
+}
+
+/* line 47, ../sass/screen.scss */
+#maincontent li {
+  display: inline;
+  font-size: .6em;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  padding-right: .8em;
+}
+/* line 53, ../sass/screen.scss */
+#maincontent li a {
+  background-color: transparent;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color .5s ease-in-out;
+  padding: .5em;
+  border-radius: .2em;
+}
+/* line 62, ../sass/screen.scss */
+#maincontent li a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* line 67, ../sass/screen.scss */
+.productdesigner {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  background-color: transparent;
+  font-size: 2.5em;
+}
+
+/* line 75, ../sass/screen.scss */
+.title {
+  font-size: 1.7em;
+  color: #787878;
+  font-weight: 400;
+  text-transform: uppercase;
+  background: none;
+  letter-spacing: 0.1em;
+}
+
+/* line 84, ../sass/screen.scss */
+.what-i-can {
+  padding-bottom: 2em;
+}
+
+/* line 89, ../sass/screen.scss */
+#maincontent li:last-child {
+  padding-right: 0;
+}
+
+/* line 93, ../sass/screen.scss */
+#aboutme {
+  display: block;
+}
+
+/* line 98, ../sass/screen.scss */
+header {
+  background-color: transparent;
+  position: relative;
+  top: 45%;
+  transform: translateY(-45%);
+  word-spacing: .3em;
+  line-height: 2em;
+}
+
+/* line 107, ../sass/screen.scss */
+#work {
+  text-align: center;
+  padding: 6em 0 6em 0;
+}
+
+/* line 112, ../sass/screen.scss */
+#footer {
+  font-size: 5em;
+  padding: 5em;
+}
+
+/* line 117, ../sass/screen.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 121, ../sass/screen.scss */
+body {
+  padding-bottom: 5em;
+}
+
+/* line 124, ../sass/screen.scss */
+html {
+  box-sizing: border-box;
+  font-weight: 400;
+  font-family: 'Lato', sans-serif;
+}
+
+/* line 130, ../sass/screen.scss */
+*, *:before, *:after {
+  box-sizing: inherit;
+  background-color: #fff;
+}
+
+/* line 135, ../sass/screen.scss */
+ul, li {
+  background-color: transparent;
+}
+
+/* line 139, ../sass/screen.scss */
+.design, .develop, .photography {
+  color: #787878;
+  display: inline-block;
+  line-height: 1.2em;
+  margin: 2em;
+  text-align: center;
+  vertical-align: top;
+  width: 20%;
+  border: 1px solid #BBBBBB;
+  padding: 2em 2em;
+  border-radius: .5em;
+}
+/* line 151, ../sass/screen.scss */
+.design h1, .develop h1, .photography h1 {
+  font-size: 1.4em;
+  padding-bottom: 1em;
+  color: #65C6BB;
+  letter-spacing: .1em;
+}
+/* line 157, ../sass/screen.scss */
+.design h2, .develop h2, .photography h2 {
+  line-height: 1.7em;
+  font-size: 1.1em;
+}
+/* line 162, ../sass/screen.scss */
+.design img, .develop img, .photography img {
+  padding-bottom: 1.5em;
+}
+
+/* line 167, ../sass/screen.scss */
+#philosophy {
+  text-align: center;
+  background-attachment: fixed;
+  background-color: #000;
+  background-image: url("../images/header-3.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 6em 0 3em;
+}
+/* line 177, ../sass/screen.scss */
+#philosophy h1, #philosophy h2 {
+  width: 30%;
+  background: none;
+  margin: 0 auto;
+  padding-bottom: 2em;
+  color: #fff;
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+/* line 187, ../sass/screen.scss */
+#philosophy h1 {
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* line 193, ../sass/screen.scss */
+.philosophy {
+  padding-bottom: 3em;
+  background: none;
+  color: #fff;
+}
+
+/* line 200, ../sass/screen.scss */
+.author-quote {
+  background: none;
+}
