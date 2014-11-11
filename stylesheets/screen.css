@@ -113,21 +113,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   text-transform: uppercase;
   padding-right: .8em;
 }
-/* line 53, ../sass/screen.scss */
+/* line 54, ../sass/screen.scss */
 #maincontent li a {
-  background-color: transparent;
+  background: none;
   color: #fff;
   text-decoration: none;
   transition: background-color .5s ease-in-out;
   padding: .5em;
   border-radius: .2em;
 }
-/* line 62, ../sass/screen.scss */
+/* line 63, ../sass/screen.scss */
 #maincontent li a:hover {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-/* line 67, ../sass/screen.scss */
+/* line 68, ../sass/screen.scss */
 .productdesigner {
   font-family: 'Lato', sans-serif;
   font-weight: 700;
@@ -136,7 +136,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-size: 2.5em;
 }
 
-/* line 75, ../sass/screen.scss */
+/* line 76, ../sass/screen.scss */
 .title {
   font-size: 1.7em;
   color: #787878;
@@ -146,22 +146,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   letter-spacing: 0.1em;
 }
 
-/* line 84, ../sass/screen.scss */
+/* line 85, ../sass/screen.scss */
 .what-i-can {
   padding-bottom: 2em;
 }
 
-/* line 89, ../sass/screen.scss */
+/* line 90, ../sass/screen.scss */
 #maincontent li:last-child {
   padding-right: 0;
 }
 
-/* line 93, ../sass/screen.scss */
+/* line 94, ../sass/screen.scss */
 #aboutme {
   display: block;
 }
 
-/* line 98, ../sass/screen.scss */
+/* line 99, ../sass/screen.scss */
 header {
   background-color: transparent;
   position: relative;
@@ -171,47 +171,42 @@ header {
   line-height: 2em;
 }
 
-/* line 107, ../sass/screen.scss */
+/* line 108, ../sass/screen.scss */
 #work {
   text-align: center;
   padding: 6em 0 6em 0;
 }
 
-/* line 112, ../sass/screen.scss */
+/* line 113, ../sass/screen.scss */
 #footer {
   font-size: 5em;
   padding: 5em;
 }
 
-/* line 117, ../sass/screen.scss */
+/* line 118, ../sass/screen.scss */
 img {
   max-width: 100%;
 }
 
-/* line 121, ../sass/screen.scss */
-body {
-  padding-bottom: 5em;
-}
-
-/* line 124, ../sass/screen.scss */
+/* line 122, ../sass/screen.scss */
 html {
   box-sizing: border-box;
   font-weight: 400;
   font-family: 'Lato', sans-serif;
 }
 
-/* line 130, ../sass/screen.scss */
+/* line 128, ../sass/screen.scss */
 *, *:before, *:after {
   box-sizing: inherit;
   background-color: #fff;
 }
 
-/* line 135, ../sass/screen.scss */
+/* line 133, ../sass/screen.scss */
 ul, li {
   background-color: transparent;
 }
 
-/* line 139, ../sass/screen.scss */
+/* line 137, ../sass/screen.scss */
 .design, .develop, .photography {
   color: #787878;
   display: inline-block;
@@ -224,24 +219,24 @@ ul, li {
   padding: 2em 2em;
   border-radius: .5em;
 }
-/* line 151, ../sass/screen.scss */
+/* line 149, ../sass/screen.scss */
 .design h1, .develop h1, .photography h1 {
   font-size: 1.4em;
   padding-bottom: 1em;
   color: #65C6BB;
   letter-spacing: .1em;
 }
-/* line 157, ../sass/screen.scss */
+/* line 156, ../sass/screen.scss */
 .design h2, .develop h2, .photography h2 {
   line-height: 1.7em;
   font-size: 1.1em;
 }
-/* line 162, ../sass/screen.scss */
+/* line 161, ../sass/screen.scss */
 .design img, .develop img, .photography img {
   padding-bottom: 1.5em;
 }
 
-/* line 167, ../sass/screen.scss */
+/* line 166, ../sass/screen.scss */
 #philosophy {
   text-align: center;
   background-attachment: fixed;
@@ -252,7 +247,7 @@ ul, li {
   background-size: cover;
   padding: 6em 0 3em;
 }
-/* line 177, ../sass/screen.scss */
+/* line 176, ../sass/screen.scss */
 #philosophy h1, #philosophy h2 {
   width: 30%;
   background: none;
@@ -262,20 +257,75 @@ ul, li {
   font-size: 1.2em;
   line-height: 1.5em;
 }
-/* line 187, ../sass/screen.scss */
+/* line 186, ../sass/screen.scss */
 #philosophy h1 {
   font-weight: 400;
   font-style: italic;
 }
 
-/* line 193, ../sass/screen.scss */
+/* line 192, ../sass/screen.scss */
 .philosophy {
   padding-bottom: 3em;
   background: none;
   color: #fff;
 }
 
-/* line 200, ../sass/screen.scss */
+/* line 199, ../sass/screen.scss */
 .author-quote {
   background: none;
+}
+
+/* line 203, ../sass/screen.scss */
+footer {
+  background-color: #65C6BB;
+  text-align: center;
+  padding-bottom: 2em;
+}
+/* line 208, ../sass/screen.scss */
+footer ul {
+  padding: 3em 0 3em 0;
+  background-color: none;
+}
+/* line 213, ../sass/screen.scss */
+footer li {
+  display: inline;
+  font-size: .8em;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  padding-right: .8em;
+}
+/* line 220, ../sass/screen.scss */
+footer li a {
+  background: none;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color .5s ease-in-out;
+  padding: 1em;
+  border-radius: .2em;
+}
+/* line 231, ../sass/screen.scss */
+footer li:first-child a:hover {
+  background-color: #4099ff;
+}
+/* line 235, ../sass/screen.scss */
+footer li:nth-child(2) a:hover {
+  background-color: #517fa4;
+}
+/* line 239, ../sass/screen.scss */
+footer li:nth-child(3) a:hover {
+  background-color: #007bb6;
+}
+/* line 243, ../sass/screen.scss */
+footer li:nth-child(4) a:hover {
+  background-color: #eb4b88;
+}
+/* line 247, ../sass/screen.scss */
+footer img {
+  background: none;
+}
+
+/* line 252, ../sass/screen.scss */
+.keep-in-touch {
+  color: #fff;
+  padding-top: 3em;
 }
