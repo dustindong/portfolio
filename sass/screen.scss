@@ -5,9 +5,11 @@
 
 @import "compass/reset";
 
+
 $orange: #65C6BB;
 $grey: #787878;
 $lightgrey: #BBBBBB;
+$ultralightgrey: #EEEEEE;
 $darkgrey: #575757;
 
 #wrap {
@@ -22,11 +24,10 @@ $darkgrey: #575757;
   text-align: center;
 }
 
-#maincontent {
+#maincontent, #about-content, #imagery-content {
   background-attachment: fixed;
   background-color: #000;
-  background-image: url("../images/header-6.jpg");
-  background-position: center center;
+  background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
@@ -34,43 +35,65 @@ $darkgrey: #575757;
   font-size: 2em;
   position: relative;
   text-align: center;
-}
 
-#maincontent ul {
-  position: relative;
-  top: 5%;
-  transform: translateY(-5%);
-  margin: 0 auto;
-  background-color: transparent;
-}
-
-#maincontent li {
-  display: inline;
-  font-size: .6em;
-  letter-spacing: .15em;
-  text-transform: uppercase;
-  padding-right: .8em;
-
-  a {
-    background: none;
-    color: #fff;
-    text-decoration: none;
-    transition: background-color .5s ease-in-out;
-    padding: .5em;
-    border-radius: .2em;
+  ul {
+    position: relative;
+    top: 5%;
+    transform: translateY(-5%);
+    margin: 0 auto;
+    background-color: transparent;
   }
 
-  a:hover {
-    background-color: rgba(0, 0, 0, .3);
+  li {
+    display: inline;
+    font-size: .6em;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    padding-right: 2em;
+
+    a {
+      background: none;
+      color: #fff;
+      text-decoration: none;
+      transition: background-color .5s ease-in-out;
+      padding: .5em;
+      border-radius: .3em;
+    }
+
+    a:hover {
+      background-color: rgba(0, 0, 0, .3);
+    }
   }
+
+  li:last-child {
+    padding-right: 0;
+  }
+}
+
+#about-content {
+  height: 30vh;
+  background-color: $orange;
+  background-image: url("../images/header-2.jpg");
+  background-position: center center;
+}
+
+#imagery-content {
+  height: 30vh;
+  background-color: $orange;
+  background-image: url("../images/imagery-2.jpg");
+}
+
+#maincontent {
+  height: 100vh;
+  background-image: url("../images/header-6.jpg");
 }
 
 .productdesigner {
   font-family: 'Lato', sans-serif;
   font-weight: 700;
-  font-style: italic;
   background-color: transparent;
   font-size: 2.5em;
+  letter-spacing: .08em;
 }
 
 .title {
@@ -101,14 +124,65 @@ header {
   position: relative;
   top: 45%;
   transform: translateY(-45%);
-  word-spacing: .3em;
+  word-spacing: .1em;
   line-height: 2em;
+  letter-spacing: .08em;
 }
 
-#work {
+#projects {
+
+  ul {
+    padding: 3em 0 3em 0;
+    background-color: none;
+  }
+
+  li {
+    display: inline;
+    font-size: .8em;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    padding-right: .8em;
+}
+
+  img {
+    border: .8em solid $ultralightgrey;
+    border-radius: .3em;
+    padding: .5em;
+    transition: border .5s ease-in-out;
+  }
+
+  a:hover img {
+      border: .8em solid $grey;
+  }
+}
+
+#projects, #imagery {
+  p {
+    font-size: 1.5em;
+    margin-top: .5em;
+    line-height: 1.8em;
+    letter-spacing: .03em;
+    padding: 0;
+    color: $grey;
+  }
+
+  a {
+  background: none;
+  color: $grey;
+  text-decoration: none;
+  transition: background-color .5s ease-in-out;
+  padding: .5em;
+  border-radius: .5em;
+  }
+
+}
+
+#work, #projects, #imagery {
   text-align: center;
   padding: 6em 0 6em 0;
 }
+
+
 
 #footer {
   font-size: 5em;
@@ -163,6 +237,35 @@ ul, li {
   }
 }
 
+#imagery {
+  text-align: center;
+  margin: 0 auto;
+
+  p {
+    color: $grey;
+    font-size: 1.1em;
+    width: 30%;
+    margin: 0 auto;
+    margin-bottom: 3em;
+  }
+
+  a {
+    text-transform: uppercase;
+    font-size: 1.3em;
+    color: $darkgrey;
+    word-spacing: .2em;
+    letter-spacing: .07em;
+    }
+  a:hover {
+    color: $orange;
+  }
+
+  img {
+    max-width: 60%;
+    margin-bottom: 3em;
+  }
+}
+
 #philosophy {
   text-align: center;
   background-attachment: fixed;
@@ -203,7 +306,7 @@ ul, li {
 footer {
   background-color: $orange;
   text-align: center;
-  padding-bottom: 2em;
+  padding: 3em 0 2em 0;
 
   ul {
     padding: 3em 0 3em 0;
@@ -223,7 +326,7 @@ footer {
       text-decoration: none;
       transition: background-color .5s ease-in-out;
       padding: 1em;
-      border-radius: .2em;
+      border-radius: .3em;
     }
 
   }
@@ -251,6 +354,26 @@ footer {
 
 .keep-in-touch {
   color: #fff;
-  padding-top: 3em;
+}
 
+.projects-title {
+  text-transform: uppercase;
+}
+
+.title-color {
+  color: $orange;
+}
+
+.projects-header-font {
+  font-size: 1.2em;
+}
+
+.shot-photograph {
+  font-size: .5em;
+  background: none;
+}
+
+.subtitle {
+  margin-top: 1em;
+  font-size: .5em;
 }
