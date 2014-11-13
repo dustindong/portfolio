@@ -13,7 +13,7 @@ $ultralightgrey: #EEEEEE;
 $darkgrey: #575757;
 
 #wrap {
-  background-color: #fff;
+//  background-color: #fff;
 }
 
 #header {
@@ -27,19 +27,16 @@ $darkgrey: #575757;
 #maincontent, #about-content, #imagery-content {
   background-attachment: fixed;
   background-color: #000;
-  background-position: top center;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
-  height: 100vh;
   font-size: 2em;
   position: relative;
   text-align: center;
 
   ul {
-    position: relative;
-    top: 5%;
-    transform: translateY(-5%);
+    padding-top: 2em;
     margin: 0 auto;
     background-color: transparent;
   }
@@ -71,16 +68,13 @@ $darkgrey: #575757;
 }
 
 #about-content {
-  height: 30vh;
-  background-color: $orange;
+  height: 100vh;
   background-image: url("../images/header-2.jpg");
-  background-position: center center;
 }
 
 #imagery-content {
-  height: 30vh;
+  padding-bottom: 2em;
   background-color: $orange;
-  background-image: url("../images/imagery-2.jpg");
 }
 
 #maincontent {
@@ -106,7 +100,7 @@ $darkgrey: #575757;
 }
 
 .what-i-can {
-  padding-bottom: 2em;
+  padding-bottom: 3em;
 }
 
 
@@ -122,8 +116,8 @@ $darkgrey: #575757;
 header {
   background-color: transparent;
   position: relative;
-  top: 45%;
-  transform: translateY(-45%);
+  top: 40%;
+  transform: translateY(-40%);
   word-spacing: .1em;
   line-height: 2em;
   letter-spacing: .08em;
@@ -132,16 +126,16 @@ header {
 #projects {
 
   ul {
-    padding: 3em 0 3em 0;
+    padding: 3em 0 3em 3em;
     background-color: none;
+    text-align: center;
   }
 
   li {
     display: inline;
     font-size: .8em;
     letter-spacing: .15em;
-    text-transform: uppercase;
-    padding-right: .8em;
+    padding: 0 2em 2em 0;
 }
 
   img {
@@ -201,7 +195,7 @@ html {
 
 *, *:before, *:after {
   box-sizing: inherit;
-  background-color: #fff;
+//  background-color: #fff;
 }
 
 ul, li {
@@ -246,7 +240,7 @@ ul, li {
     font-size: 1.1em;
     width: 30%;
     margin: 0 auto;
-    margin-bottom: 3em;
+    padding-bottom: 4em;
   }
 
   a {
@@ -263,6 +257,11 @@ ul, li {
   img {
     max-width: 60%;
     margin-bottom: 3em;
+  }
+
+  h1 {
+    font-size: 1.4em;
+    padding-bottom: 1.5em;
   }
 }
 
@@ -358,6 +357,7 @@ footer {
 
 .projects-title {
   text-transform: uppercase;
+  font-size: 2em;
 }
 
 .title-color {
