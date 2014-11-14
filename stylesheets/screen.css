@@ -183,32 +183,37 @@ header {
   letter-spacing: .08em;
 }
 
-/* line 128, ../sass/screen.scss */
+/* line 126, ../sass/screen.scss */
+.front-page {
+  letter-spacing: .03em;
+}
+
+/* line 132, ../sass/screen.scss */
 #projects ul {
   padding: 3em 0 3em 3em;
   background-color: none;
   text-align: center;
 }
-/* line 134, ../sass/screen.scss */
+/* line 138, ../sass/screen.scss */
 #projects li {
   display: inline;
   font-size: .8em;
   letter-spacing: .15em;
   padding: 0 2em 2em 0;
 }
-/* line 141, ../sass/screen.scss */
+/* line 145, ../sass/screen.scss */
 #projects img {
   border: 0.8em solid #EEEEEE;
   border-radius: .3em;
   padding: .5em;
   transition: border .5s ease-in-out;
 }
-/* line 148, ../sass/screen.scss */
+/* line 152, ../sass/screen.scss */
 #projects a:hover img {
   border: 0.8em solid #787878;
 }
 
-/* line 154, ../sass/screen.scss */
+/* line 158, ../sass/screen.scss */
 #projects p, #imagery p {
   font-size: 1.5em;
   margin-top: .5em;
@@ -217,7 +222,7 @@ header {
   padding: 0;
   color: #787878;
 }
-/* line 163, ../sass/screen.scss */
+/* line 167, ../sass/screen.scss */
 #projects a, #imagery a {
   background: none;
   color: #787878;
@@ -227,41 +232,41 @@ header {
   border-radius: .5em;
 }
 
-/* line 174, ../sass/screen.scss */
+/* line 178, ../sass/screen.scss */
 #work, #projects, #imagery {
   text-align: center;
   padding: 6em 0 6em 0;
 }
 
-/* line 181, ../sass/screen.scss */
+/* line 185, ../sass/screen.scss */
 #footer {
   font-size: 5em;
   padding: 5em;
 }
 
-/* line 186, ../sass/screen.scss */
+/* line 190, ../sass/screen.scss */
 img {
   max-width: 100%;
 }
 
-/* line 190, ../sass/screen.scss */
+/* line 194, ../sass/screen.scss */
 html {
   box-sizing: border-box;
   font-weight: 400;
   font-family: 'Lato', sans-serif;
 }
 
-/* line 196, ../sass/screen.scss */
+/* line 200, ../sass/screen.scss */
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
-/* line 201, ../sass/screen.scss */
+/* line 205, ../sass/screen.scss */
 ul, li {
   background-color: transparent;
 }
 
-/* line 205, ../sass/screen.scss */
+/* line 209, ../sass/screen.scss */
 .design, .develop, .photography {
   color: #787878;
   display: inline-block;
@@ -274,29 +279,29 @@ ul, li {
   padding: 2em 2em;
   border-radius: .5em;
 }
-/* line 217, ../sass/screen.scss */
+/* line 221, ../sass/screen.scss */
 .design h1, .develop h1, .photography h1 {
   font-size: 1.4em;
   padding-bottom: 1em;
   color: #65C6BB;
   letter-spacing: .1em;
 }
-/* line 224, ../sass/screen.scss */
+/* line 228, ../sass/screen.scss */
 .design h2, .develop h2, .photography h2 {
   line-height: 1.7em;
   font-size: 1.1em;
 }
-/* line 229, ../sass/screen.scss */
+/* line 233, ../sass/screen.scss */
 .design img, .develop img, .photography img {
   padding-bottom: 1.5em;
 }
 
-/* line 234, ../sass/screen.scss */
+/* line 238, ../sass/screen.scss */
 #imagery {
   text-align: center;
   margin: 0 auto;
 }
-/* line 238, ../sass/screen.scss */
+/* line 242, ../sass/screen.scss */
 #imagery p {
   color: #787878;
   font-size: 1.1em;
@@ -304,7 +309,7 @@ ul, li {
   margin: 0 auto;
   padding-bottom: 4em;
 }
-/* line 246, ../sass/screen.scss */
+/* line 250, ../sass/screen.scss */
 #imagery a {
   text-transform: uppercase;
   font-size: 1.3em;
@@ -312,22 +317,22 @@ ul, li {
   word-spacing: .2em;
   letter-spacing: .07em;
 }
-/* line 253, ../sass/screen.scss */
+/* line 257, ../sass/screen.scss */
 #imagery a:hover {
   color: #65C6BB;
 }
-/* line 257, ../sass/screen.scss */
+/* line 261, ../sass/screen.scss */
 #imagery img {
   max-width: 60%;
   margin-bottom: 3em;
 }
-/* line 262, ../sass/screen.scss */
+/* line 266, ../sass/screen.scss */
 #imagery h1 {
   font-size: 1.4em;
   padding-bottom: 1.5em;
 }
 
-/* line 268, ../sass/screen.scss */
+/* line 272, ../sass/screen.scss */
 #philosophy {
   text-align: center;
   background-attachment: fixed;
@@ -338,7 +343,7 @@ ul, li {
   background-size: cover;
   padding: 6em 0 3em;
 }
-/* line 278, ../sass/screen.scss */
+/* line 282, ../sass/screen.scss */
 #philosophy h1, #philosophy h2 {
   width: 30%;
   background: none;
@@ -348,45 +353,46 @@ ul, li {
   font-size: 1.2em;
   line-height: 1.5em;
 }
-/* line 288, ../sass/screen.scss */
+/* line 292, ../sass/screen.scss */
 #philosophy h1 {
   font-weight: 400;
   font-style: italic;
 }
 
-/* line 294, ../sass/screen.scss */
+/* line 298, ../sass/screen.scss */
 .philosophy {
   padding-bottom: 3em;
   background: none;
   color: #fff;
 }
 
-/* line 301, ../sass/screen.scss */
+/* line 305, ../sass/screen.scss */
 .author-quote {
   background: none;
 }
 
-/* line 305, ../sass/screen.scss */
+/* line 309, ../sass/screen.scss */
 footer {
   background-color: #65C6BB;
   text-align: center;
-  padding: 3em 0 2em 0;
+  padding: 3em 0 0 0;
 }
-/* line 310, ../sass/screen.scss */
-footer ul {
+
+/* line 316, ../sass/screen.scss */
+.footer-social-link ul, .footer-nav-bar ul {
   padding: 3em 0 3em 0;
   background-color: none;
 }
-/* line 315, ../sass/screen.scss */
-footer li {
+/* line 321, ../sass/screen.scss */
+.footer-social-link li, .footer-nav-bar li {
   display: inline;
   font-size: .8em;
   letter-spacing: .15em;
   text-transform: uppercase;
   padding-right: .8em;
 }
-/* line 322, ../sass/screen.scss */
-footer li a {
+/* line 328, ../sass/screen.scss */
+.footer-social-link li a, .footer-nav-bar li a {
   background: none;
   color: #fff;
   text-decoration: none;
@@ -394,56 +400,76 @@ footer li a {
   padding: 1em;
   border-radius: .3em;
 }
-/* line 333, ../sass/screen.scss */
-footer li:first-child a:hover {
+/* line 337, ../sass/screen.scss */
+.footer-social-link li a:hover, .footer-nav-bar li a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* line 345, ../sass/screen.scss */
+.footer-social-link ul li:first-child a:hover {
   background-color: #4099ff;
 }
-/* line 337, ../sass/screen.scss */
-footer li:nth-child(2) a:hover {
+/* line 349, ../sass/screen.scss */
+.footer-social-link ul li:nth-child(2) a:hover {
   background-color: #517fa4;
 }
-/* line 341, ../sass/screen.scss */
-footer li:nth-child(3) a:hover {
+/* line 353, ../sass/screen.scss */
+.footer-social-link ul li:nth-child(3) a:hover {
   background-color: #007bb6;
 }
-/* line 345, ../sass/screen.scss */
-footer li:nth-child(4) a:hover {
+/* line 357, ../sass/screen.scss */
+.footer-social-link ul li:nth-child(4) a:hover {
   background-color: #eb4b88;
 }
-/* line 349, ../sass/screen.scss */
-footer img {
+/* line 361, ../sass/screen.scss */
+.footer-social-link ul img {
   background: none;
 }
 
-/* line 354, ../sass/screen.scss */
+/* line 366, ../sass/screen.scss */
+.footer-nav-bar {
+  font-size: 1.2em;
+}
+/* line 369, ../sass/screen.scss */
+.footer-nav-bar ul {
+  padding: 0em 0 3em 0;
+}
+
+/* line 375, ../sass/screen.scss */
 .keep-in-touch {
   color: #fff;
 }
 
-/* line 358, ../sass/screen.scss */
+/* line 379, ../sass/screen.scss */
 .projects-title {
   text-transform: uppercase;
   font-size: 2em;
 }
 
-/* line 363, ../sass/screen.scss */
+/* line 384, ../sass/screen.scss */
 .title-color {
   color: #65C6BB;
 }
 
-/* line 367, ../sass/screen.scss */
+/* line 388, ../sass/screen.scss */
 .projects-header-font {
   font-size: 1.2em;
 }
 
-/* line 371, ../sass/screen.scss */
+/* line 392, ../sass/screen.scss */
 .shot-photograph {
   font-size: .5em;
   background: none;
 }
 
-/* line 376, ../sass/screen.scss */
+/* line 397, ../sass/screen.scss */
 .subtitle {
   margin-top: 1em;
   font-size: .5em;
+}
+
+/* line 402, ../sass/screen.scss */
+.img-border img {
+  border: 0.8em solid #EEEEEE;
+  border-radius: .3em;
 }

@@ -123,6 +123,10 @@ header {
   letter-spacing: .08em;
 }
 
+.front-page {
+  letter-spacing: .03em;
+}
+
 #projects {
 
   ul {
@@ -305,8 +309,10 @@ ul, li {
 footer {
   background-color: $orange;
   text-align: center;
-  padding: 3em 0 2em 0;
+  padding: 3em 0 0 0;
+}
 
+.footer-social-link, .footer-nav-bar {
   ul {
     padding: 3em 0 3em 0;
     background-color: none;
@@ -328,8 +334,14 @@ footer {
       border-radius: .3em;
     }
 
-  }
+    a:hover {
+      background-color: rgba(0, 0, 0, .3);
+    }
 
+  }
+}
+
+.footer-social-link ul {
   li:first-child a:hover {
     background-color: rgb(64, 153, 255);
   }
@@ -349,6 +361,15 @@ footer {
   img {
     background: none;
   }
+}
+
+.footer-nav-bar {
+  font-size: 1.2em;
+
+  ul {
+  padding: 0em 0 3em 0;
+  }
+
 }
 
 .keep-in-touch {
@@ -376,4 +397,9 @@ footer {
 .subtitle {
   margin-top: 1em;
   font-size: .5em;
+}
+
+.img-border img {
+  border: .8em solid $ultralightgrey;
+  border-radius: .3em;
 }
