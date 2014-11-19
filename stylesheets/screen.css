@@ -1,83 +1,78 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 5, ../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
-}
+img {
+  max-width: 100%; }
 
-/* line 22, ../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html {
-  line-height: 1;
-}
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400; }
 
-/* line 24, ../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
-ol, ul {
-  list-style: none;
-}
+*, *:before, *:after {
+  box-sizing: inherit; }
 
-/* line 26, ../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
+ul, li {
+  background-color: transparent; }
 
-/* line 28, ../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
+footer {
+  background-color: #65C6BB;
+  padding: 3em 0 0 0;
+  text-align: center; }
 
-/* line 30, ../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
-q, blockquote {
-  quotes: none;
-}
-/* line 103, ../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
+.footer-social-link ul, .footer-nav-bar ul {
+  background-color: none;
+  padding: 3em 0 3em 0; }
+.footer-social-link li, .footer-nav-bar li {
+  display: inline;
+  font-size: .8em;
+  letter-spacing: .15em;
+  padding-right: .8em;
+  text-transform: uppercase; }
+  .footer-social-link li a, .footer-nav-bar li a {
+    background: none;
+    border-radius: .3em;
+    color: #fff;
+    padding: 1em;
+    text-decoration: none;
+    transition: background-color .5s ease-in-out; }
+  .footer-social-link li a:hover, .footer-nav-bar li a:hover {
+    background-color: rgba(0, 0, 0, 0.3); }
 
-/* line 32, ../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
-a img {
-  border: none;
-}
+.footer-social-link ul li:first-child a:hover {
+  background-color: #4099ff; }
+.footer-social-link ul li:nth-child(2) a:hover {
+  background-color: #517fa4; }
+.footer-social-link ul li:nth-child(3) a:hover {
+  background-color: #007bb6; }
+.footer-social-link ul li:nth-child(4) a:hover {
+  background-color: #eb4b88; }
+.footer-social-link ul img {
+  background: none; }
 
-/* line 116, ../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-  display: block;
-}
+.footer-nav-bar {
+  font-size: 1.2em; }
+  .footer-nav-bar ul {
+    padding: 0em 0 3em 0; }
 
-/* line 19, ../sass/screen.scss */
+#footer {
+  font-size: 5em;
+  padding: 5em; }
+
 #header {
+  background-color: #ededed;
   font-size: 32px;
   height: 40px;
-  background-color: #ededed;
   padding-top: 25px;
-  text-align: center;
-}
+  text-align: center; }
 
-/* line 27, ../sass/screen.scss */
-#maincontent, #about-content, #imagery-content {
+header {
+  background-color: transparent;
+  letter-spacing: .08em;
+  line-height: 2em;
+  position: relative;
+  top: 40%;
+  transform: translateY(-40%);
+  word-spacing: .1em; }
+
+#main-header, #project-details-nav, #navigation {
   background-attachment: fixed;
   background-color: #000;
   background-position: center center;
@@ -86,255 +81,162 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   color: #fff;
   font-size: 2em;
   position: relative;
-  text-align: center;
-}
-/* line 38, ../sass/screen.scss */
-#maincontent ul, #about-content ul, #imagery-content ul {
-  padding-top: 2em;
-  margin: 0 auto;
-  background-color: transparent;
-}
-/* line 44, ../sass/screen.scss */
-#maincontent li, #about-content li, #imagery-content li {
-  display: inline;
-  font-size: .6em;
-  letter-spacing: .15em;
-  text-transform: uppercase;
-  padding-right: 2em;
-}
-/* line 51, ../sass/screen.scss */
-#maincontent li a, #about-content li a, #imagery-content li a {
-  background: none;
-  color: #fff;
-  text-decoration: none;
-  transition: background-color .5s ease-in-out;
-  padding: .5em;
-  border-radius: .3em;
-}
-/* line 60, ../sass/screen.scss */
-#maincontent li a:hover, #about-content li a:hover, #imagery-content li a:hover {
-  background-color: rgba(0, 0, 0, 0.3);
-}
-/* line 65, ../sass/screen.scss */
-#maincontent li:last-child, #about-content li:last-child, #imagery-content li:last-child {
-  padding-right: 0;
-}
+  text-align: center; }
+  #main-header ul, #project-details-nav ul, #navigation ul {
+    background-color: transparent;
+    padding-top: 2em;
+    margin: 0 auto; }
+  #main-header li, #project-details-nav li, #navigation li {
+    display: inline;
+    font-size: .6em;
+    letter-spacing: .15em;
+    padding-right: 2em;
+    text-transform: uppercase; }
+    #main-header li a, #project-details-nav li a, #navigation li a {
+      background: none;
+      border-radius: .3em;
+      color: #fff;
+      padding: .5em;
+      text-decoration: none;
+      transition: background-color .5s ease-in-out; }
+    #main-header li a:hover, #project-details-nav li a:hover, #navigation li a:hover {
+      background-color: rgba(0, 0, 0, 0.3); }
+  #main-header li:last-child, #project-details-nav li:last-child, #navigation li:last-child {
+    padding-right: 0; }
 
-/* line 70, ../sass/screen.scss */
-#about-content {
-  height: 100vh;
+#navigation {
   background-image: url("../images/header-2.jpg");
-}
+  height: 100vh; }
 
-/* line 75, ../sass/screen.scss */
-#imagery-content {
-  padding-bottom: 2em;
+#project-details-nav {
   background-color: #65C6BB;
-}
+  padding-bottom: 2em; }
 
-/* line 80, ../sass/screen.scss */
-#maincontent {
-  height: 100vh;
-  background-image: url("../images/header-6.jpg");
-}
+#main-header li:last-child {
+  padding-right: 0; }
 
-/* line 85, ../sass/screen.scss */
-.productdesigner {
-  font-family: 'Lato', sans-serif;
-  font-weight: 700;
-  background-color: transparent;
-  font-size: 2.5em;
-  letter-spacing: .08em;
-}
-
-/* line 93, ../sass/screen.scss */
-.title {
-  font-size: 1.7em;
-  color: #787878;
-  font-weight: 400;
-  text-transform: uppercase;
-  background: none;
-  letter-spacing: 0.1em;
-}
-
-/* line 102, ../sass/screen.scss */
-.what-i-can {
-  padding-bottom: 3em;
-}
-
-/* line 107, ../sass/screen.scss */
-#maincontent li:last-child {
-  padding-right: 0;
-}
-
-/* line 111, ../sass/screen.scss */
 #aboutme {
-  display: block;
-}
+  display: block; }
 
-/* line 116, ../sass/screen.scss */
-header {
-  background-color: transparent;
-  position: relative;
-  top: 40%;
-  transform: translateY(-40%);
-  word-spacing: .1em;
-  line-height: 2em;
-  letter-spacing: .08em;
-}
-
-/* line 126, ../sass/screen.scss */
 .front-page {
-  letter-spacing: .03em;
-}
+  letter-spacing: .03em; }
 
-/* line 132, ../sass/screen.scss */
+#projects p, #imagery p {
+  color: #787878;
+  font-size: 1.5em;
+  letter-spacing: .03em;
+  line-height: 1.8em;
+  margin-top: .5em;
+  padding: 0; }
+#projects a, #imagery a {
+  background: none;
+  border-radius: .5em;
+  color: #787878;
+  padding: .5em;
+  text-decoration: none;
+  transition: background-color .5s ease-in-out; }
+
+#work, #projects, #imagery {
+  padding: 6em 0 6em 0;
+  text-align: center; }
+
+#imagery {
+  margin: 0 auto;
+  text-align: center; }
+  #imagery p {
+    color: #787878;
+    font-size: 1.1em;
+    padding-bottom: 4em;
+    margin: 0 auto;
+    width: 30%; }
+  #imagery a {
+    color: #575757;
+    font-size: 1.3em;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+    word-spacing: .2em; }
+  #imagery a:hover {
+    color: #65C6BB; }
+  #imagery img {
+    margin-bottom: 3em;
+    max-width: 60%; }
+  #imagery h1 {
+    font-size: 1.4em;
+    padding-bottom: 1.5em; }
+
+.title-color {
+  color: #65C6BB; }
+
+.shot-photograph {
+  background: none;
+  font-size: .5em; }
+
+.subtitle {
+  font-size: .5em;
+  margin-top: 1em; }
+
+.img-border img {
+  border: 0.8em solid #EEEEEE;
+  border-radius: .3em; }
+
 #projects ul {
-  padding: 3em 0 3em 3em;
   background-color: none;
-  text-align: center;
-}
-/* line 138, ../sass/screen.scss */
+  padding: 3em 0 3em 3em;
+  text-align: center; }
 #projects li {
   display: inline;
   font-size: .8em;
   letter-spacing: .15em;
-  padding: 0 2em 2em 0;
-}
-/* line 145, ../sass/screen.scss */
+  padding: 0 2em 2em 0; }
 #projects img {
   border: 0.8em solid #EEEEEE;
   border-radius: .3em;
   padding: .5em;
-  transition: border .5s ease-in-out;
-}
-/* line 152, ../sass/screen.scss */
+  transition: border .5s ease-in-out; }
 #projects a:hover img {
-  border: 0.8em solid #787878;
-}
+  border: 0.8em solid #787878; }
 
-/* line 158, ../sass/screen.scss */
-#projects p, #imagery p {
-  font-size: 1.5em;
-  margin-top: .5em;
-  line-height: 1.8em;
-  letter-spacing: .03em;
-  padding: 0;
-  color: #787878;
-}
-/* line 167, ../sass/screen.scss */
-#projects a, #imagery a {
-  background: none;
-  color: #787878;
-  text-decoration: none;
-  transition: background-color .5s ease-in-out;
-  padding: .5em;
-  border-radius: .5em;
-}
+.projects-header-font {
+  font-size: 1.2em; }
 
-/* line 178, ../sass/screen.scss */
-#work, #projects, #imagery {
-  text-align: center;
-  padding: 6em 0 6em 0;
-}
+.projects-title {
+  font-size: 2em;
+  text-transform: uppercase; }
 
-/* line 185, ../sass/screen.scss */
-#footer {
-  font-size: 5em;
-  padding: 5em;
-}
+#main-header {
+  background-image: url("../images/header-6.jpg");
+  height: 100vh; }
 
-/* line 190, ../sass/screen.scss */
-img {
-  max-width: 100%;
-}
-
-/* line 194, ../sass/screen.scss */
-html {
-  box-sizing: border-box;
-  font-weight: 400;
-  font-family: 'Lato', sans-serif;
-}
-
-/* line 200, ../sass/screen.scss */
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-/* line 205, ../sass/screen.scss */
-ul, li {
+.productdesigner {
   background-color: transparent;
-}
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5em;
+  font-weight: 700;
+  letter-spacing: .08em; }
 
-/* line 209, ../sass/screen.scss */
 .design, .develop, .photography {
+  border: 1px solid #BBBBBB;
+  border-radius: .5em;
   color: #787878;
   display: inline-block;
   line-height: 1.2em;
   margin: 2em;
+  padding: 2em 2em;
   text-align: center;
   vertical-align: top;
-  width: 20%;
-  border: 1px solid #BBBBBB;
-  padding: 2em 2em;
-  border-radius: .5em;
-}
-/* line 221, ../sass/screen.scss */
-.design h1, .develop h1, .photography h1 {
-  font-size: 1.4em;
-  padding-bottom: 1em;
-  color: #65C6BB;
-  letter-spacing: .1em;
-}
-/* line 228, ../sass/screen.scss */
-.design h2, .develop h2, .photography h2 {
-  line-height: 1.7em;
-  font-size: 1.1em;
-}
-/* line 233, ../sass/screen.scss */
-.design img, .develop img, .photography img {
-  padding-bottom: 1.5em;
-}
+  width: 20%; }
+  .design h1, .develop h1, .photography h1 {
+    color: #65C6BB;
+    font-size: 1.4em;
+    letter-spacing: .1em;
+    padding-bottom: 1em; }
+  .design h2, .develop h2, .photography h2 {
+    font-size: 1.1em;
+    line-height: 1.7em; }
+  .design img, .develop img, .photography img {
+    padding-bottom: 1.5em; }
 
-/* line 238, ../sass/screen.scss */
-#imagery {
-  text-align: center;
-  margin: 0 auto;
-}
-/* line 242, ../sass/screen.scss */
-#imagery p {
-  color: #787878;
-  font-size: 1.1em;
-  width: 30%;
-  margin: 0 auto;
-  padding-bottom: 4em;
-}
-/* line 250, ../sass/screen.scss */
-#imagery a {
-  text-transform: uppercase;
-  font-size: 1.3em;
-  color: #575757;
-  word-spacing: .2em;
-  letter-spacing: .07em;
-}
-/* line 257, ../sass/screen.scss */
-#imagery a:hover {
-  color: #65C6BB;
-}
-/* line 261, ../sass/screen.scss */
-#imagery img {
-  max-width: 60%;
-  margin-bottom: 3em;
-}
-/* line 266, ../sass/screen.scss */
-#imagery h1 {
-  font-size: 1.4em;
-  padding-bottom: 1.5em;
-}
-
-/* line 272, ../sass/screen.scss */
 #philosophy {
-  text-align: center;
   background-attachment: fixed;
   background-color: #000;
   background-image: url("../images/header-3.jpg");
@@ -342,134 +244,42 @@ ul, li {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 6em 0 3em;
-}
-/* line 282, ../sass/screen.scss */
-#philosophy h1, #philosophy h2 {
-  width: 30%;
-  background: none;
-  margin: 0 auto;
-  padding-bottom: 2em;
-  color: #fff;
-  font-size: 1.2em;
-  line-height: 1.5em;
-}
-/* line 292, ../sass/screen.scss */
-#philosophy h1 {
-  font-weight: 400;
-  font-style: italic;
-}
+  text-align: center; }
+  #philosophy h1, #philosophy h2 {
+    background: none;
+    color: #fff;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    margin: 0 auto;
+    padding-bottom: 2em;
+    width: 30%; }
+  #philosophy h1 {
+    font-style: italic;
+    font-weight: 400; }
 
-/* line 298, ../sass/screen.scss */
 .philosophy {
-  padding-bottom: 3em;
   background: none;
   color: #fff;
-}
+  padding-bottom: 3em; }
 
-/* line 305, ../sass/screen.scss */
 .author-quote {
-  background: none;
-}
+  background: none; }
 
-/* line 309, ../sass/screen.scss */
-footer {
-  background-color: #65C6BB;
-  text-align: center;
-  padding: 3em 0 0 0;
-}
-
-/* line 316, ../sass/screen.scss */
-.footer-social-link ul, .footer-nav-bar ul {
-  padding: 3em 0 3em 0;
-  background-color: none;
-}
-/* line 321, ../sass/screen.scss */
-.footer-social-link li, .footer-nav-bar li {
-  display: inline;
-  font-size: .8em;
-  letter-spacing: .15em;
-  text-transform: uppercase;
-  padding-right: .8em;
-}
-/* line 328, ../sass/screen.scss */
-.footer-social-link li a, .footer-nav-bar li a {
-  background: none;
-  color: #fff;
-  text-decoration: none;
-  transition: background-color .5s ease-in-out;
-  padding: 1em;
-  border-radius: .3em;
-}
-/* line 337, ../sass/screen.scss */
-.footer-social-link li a:hover, .footer-nav-bar li a:hover {
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
-/* line 345, ../sass/screen.scss */
-.footer-social-link ul li:first-child a:hover {
-  background-color: #4099ff;
-}
-/* line 349, ../sass/screen.scss */
-.footer-social-link ul li:nth-child(2) a:hover {
-  background-color: #517fa4;
-}
-/* line 353, ../sass/screen.scss */
-.footer-social-link ul li:nth-child(3) a:hover {
-  background-color: #007bb6;
-}
-/* line 357, ../sass/screen.scss */
-.footer-social-link ul li:nth-child(4) a:hover {
-  background-color: #eb4b88;
-}
-/* line 361, ../sass/screen.scss */
-.footer-social-link ul img {
-  background: none;
-}
-
-/* line 366, ../sass/screen.scss */
-.footer-nav-bar {
-  font-size: 1.2em;
-}
-/* line 369, ../sass/screen.scss */
-.footer-nav-bar ul {
-  padding: 0em 0 3em 0;
-}
-
-/* line 375, ../sass/screen.scss */
 .keep-in-touch {
-  color: #fff;
-}
+  color: #fff; }
 
-/* line 379, ../sass/screen.scss */
-.projects-title {
-  text-transform: uppercase;
-  font-size: 2em;
-}
-
-/* line 384, ../sass/screen.scss */
-.title-color {
-  color: #65C6BB;
-}
-
-/* line 388, ../sass/screen.scss */
-.projects-header-font {
-  font-size: 1.2em;
-}
-
-/* line 392, ../sass/screen.scss */
-.shot-photograph {
-  font-size: .5em;
+.title {
   background: none;
-}
+  color: #787878;
+  font-size: 1.7em;
+  font-weight: 400;
+  letter-spacing: .1em;
+  text-transform: uppercase; }
 
-/* line 397, ../sass/screen.scss */
-.subtitle {
-  margin-top: 1em;
-  font-size: .5em;
-}
+.what-i-can {
+  padding-bottom: 3em; }
 
-/* line 402, ../sass/screen.scss */
-.img-border img {
-  border: 0.8em solid #EEEEEE;
-  border-radius: .3em;
-}
+.keep-in-touch, .philosophy {
+  color: #fff; }
+
+/*# sourceMappingURL=screen.css.map */

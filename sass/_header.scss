@@ -1,0 +1,17 @@
+#header {
+  background-color: #ededed;
+  font-size: 32px;
+  height: 40px;
+  padding-top: 25px;
+  text-align: center;
+}
+
+header {
+  background-color: transparent;
+  letter-spacing: .08em;
+  line-height: 2em;
+  position: relative;
+  top: 40%;
+  transform: translateY(-40%);
+  word-spacing: .1em;
+}

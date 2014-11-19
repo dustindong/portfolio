@@ -1,30 +1,11 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import 'variables';
 
-@import "compass/reset";
+@import 'base';
+@import 'footer';
+@import 'header';
 
 
-$orange: #65C6BB;
-$grey: #787878;
-$lightgrey: #BBBBBB;
-$ultralightgrey: #EEEEEE;
-$darkgrey: #575757;
-
-#wrap {
-//  background-color: #fff;
-}
-
-#header {
-  font-size: 32px;
-  height: 40px;
-  background-color: #ededed;
-  padding-top: 25px;
-  text-align: center;
-}
-
-#maincontent, #about-content, #imagery-content {
+#main-header, #project-details-nav, #navigation {
   background-attachment: fixed;
   background-color: #000;
   background-position: center center;
@@ -36,75 +17,50 @@ $darkgrey: #575757;
   text-align: center;
 
   ul {
+    background-color: transparent;
     padding-top: 2em;
     margin: 0 auto;
-    background-color: transparent;
   }
 
   li {
     display: inline;
     font-size: .6em;
     letter-spacing: .15em;
-    text-transform: uppercase;
     padding-right: 2em;
+    text-transform: uppercase;
 
     a {
       background: none;
+      border-radius: .3em;
       color: #fff;
+      padding: .5em;
       text-decoration: none;
       transition: background-color .5s ease-in-out;
-      padding: .5em;
-      border-radius: .3em;
-    }
+      }
 
     a:hover {
       background-color: rgba(0, 0, 0, .3);
-    }
+      }
   }
 
   li:last-child {
     padding-right: 0;
   }
+
 }
 
-#about-content {
-  height: 100vh;
+#navigation {
   background-image: url("../images/header-2.jpg");
-}
-
-#imagery-content {
-  padding-bottom: 2em;
-  background-color: $orange;
-}
-
-#maincontent {
   height: 100vh;
-  background-image: url("../images/header-6.jpg");
 }
 
-.productdesigner {
-  font-family: 'Lato', sans-serif;
-  font-weight: 700;
-  background-color: transparent;
-  font-size: 2.5em;
-  letter-spacing: .08em;
-}
-
-.title {
-  font-size: 1.7em;
-  color: $grey;
-  font-weight: 400;
-  text-transform: uppercase;
-  background: none;
-  letter-spacing: .1em
-}
-
-.what-i-can {
-  padding-bottom: 3em;
+#project-details-nav {
+  background-color: $teal;
+  padding-bottom: 2em;
 }
 
 
-#maincontent li:last-child {
+#main-header li:last-child {
   padding-right: 0;
 }
 
@@ -112,26 +68,94 @@ $darkgrey: #575757;
   display: block;
 }
 
-
-header {
-  background-color: transparent;
-  position: relative;
-  top: 40%;
-  transform: translateY(-40%);
-  word-spacing: .1em;
-  line-height: 2em;
-  letter-spacing: .08em;
-}
-
 .front-page {
   letter-spacing: .03em;
 }
 
-#projects {
+#projects, #imagery {
+  p {
+    color: $grey;
+    font-size: 1.5em;
+    letter-spacing: .03em;
+    line-height: 1.8em;
+    margin-top: .5em;
+    padding: 0;
+  }
 
+  a {
+    background: none;
+    border-radius: .5em;
+    color: $grey;
+    padding: .5em;
+    text-decoration: none;
+    transition: background-color .5s ease-in-out;
+  }
+
+}
+
+#work, #projects, #imagery {
+  padding: 6em 0 6em 0;
+  text-align: center;
+}
+
+#imagery {
+  margin: 0 auto;
+  text-align: center;
+
+  p {
+    color: $grey;
+    font-size: 1.1em;
+    padding-bottom: 4em;
+    margin: 0 auto;
+    width: 30%;
+  }
+
+  a {
+    color: $darkgrey;
+    font-size: 1.3em;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+    word-spacing: .2em;
+  }
+
+  a:hover {
+    color: $teal;
+  }
+
+  img {
+    margin-bottom: 3em;
+    max-width: 60%;
+  }
+
+  h1 {
+    font-size: 1.4em;
+    padding-bottom: 1.5em;
+  }
+}
+
+.title-color {
+  color: $teal;
+}
+
+.shot-photograph {
+  background: none;
+  font-size: .5em;
+}
+
+.subtitle {
+  font-size: .5em;
+  margin-top: 1em;
+}
+
+.img-border img {
+  border: .8em solid $ultralightgrey;
+  border-radius: .3em;
+}
+
+#projects {
   ul {
-    padding: 3em 0 3em 3em;
     background-color: none;
+    padding: 3em 0 3em 3em;
     text-align: center;
   }
 
@@ -140,7 +164,7 @@ header {
     font-size: .8em;
     letter-spacing: .15em;
     padding: 0 2em 2em 0;
-}
+  }
 
   img {
     border: .8em solid $ultralightgrey;
@@ -150,127 +174,63 @@ header {
   }
 
   a:hover img {
-      border: .8em solid $grey;
-  }
-}
-
-#projects, #imagery {
-  p {
-    font-size: 1.5em;
-    margin-top: .5em;
-    line-height: 1.8em;
-    letter-spacing: .03em;
-    padding: 0;
-    color: $grey;
-  }
-
-  a {
-  background: none;
-  color: $grey;
-  text-decoration: none;
-  transition: background-color .5s ease-in-out;
-  padding: .5em;
-  border-radius: .5em;
+    border: .8em solid $grey;
   }
 
 }
 
-#work, #projects, #imagery {
-  text-align: center;
-  padding: 6em 0 6em 0;
+.projects-header-font {
+  font-size: 1.2em;
 }
 
-
-
-#footer {
-  font-size: 5em;
-  padding: 5em;
+.projects-title {
+  font-size: 2em;
+  text-transform: uppercase;
 }
 
-img {
-  max-width: 100%;
+#main-header {
+  background-image: url("../images/header-6.jpg");
+  height: 100vh;
 }
 
-html {
-  box-sizing: border-box;
-  font-weight: 400;
-  font-family: 'Lato', sans-serif;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-//  background-color: #fff;
-}
-
-ul, li {
+.productdesigner {
   background-color: transparent;
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5em;
+  font-weight: 700;
+  letter-spacing: .08em;
 }
 
 .design, .develop, .photography {
+  border: 1px solid $lightgrey;
+  border-radius: .5em;
   color: #787878;
   display: inline-block;
   line-height: 1.2em;
   margin: 2em;
+  padding: 2em 2em;
   text-align: center;
   vertical-align: top;
   width: 20%;
-  border: 1px solid $lightgrey;
-  padding: 2em 2em;
-  border-radius: .5em;
 
   h1 {
+    color: $teal;
     font-size: 1.4em;
-    padding-bottom: 1em;
-    color: $orange;
     letter-spacing: .1em;
+    padding-bottom: 1em;
   }
 
   h2 {
+    font-size: 1.1em;
     line-height: 1.7em;
-    font-size: 1.1em;
   }
 
   img {
-    padding-bottom: 1.5em;
-  }
-}
-
-#imagery {
-  text-align: center;
-  margin: 0 auto;
-
-  p {
-    color: $grey;
-    font-size: 1.1em;
-    width: 30%;
-    margin: 0 auto;
-    padding-bottom: 4em;
-  }
-
-  a {
-    text-transform: uppercase;
-    font-size: 1.3em;
-    color: $darkgrey;
-    word-spacing: .2em;
-    letter-spacing: .07em;
-    }
-  a:hover {
-    color: $orange;
-  }
-
-  img {
-    max-width: 60%;
-    margin-bottom: 3em;
-  }
-
-  h1 {
-    font-size: 1.4em;
     padding-bottom: 1.5em;
   }
 }
 
 #philosophy {
-  text-align: center;
   background-attachment: fixed;
   background-color: #000;
   background-image: url("../images/header-3.jpg");
@@ -278,128 +238,51 @@ ul, li {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 6em 0 3em;
+  text-align: center;
 
   h1, h2 {
-    width: 30%;
     background: none;
-    margin: 0 auto;
-    padding-bottom: 2em;
     color: #fff;
     font-size: 1.2em;
     line-height: 1.5em;
+    margin: 0 auto;
+    padding-bottom: 2em;
+    width: 30%;
   }
 
   h1 {
-    font-weight: 400;
     font-style: italic;
+    font-weight: 400;
   }
 }
 
 .philosophy {
-  padding-bottom: 3em;
   background: none;
   color: #fff;
-
+  padding-bottom: 3em;
 }
 
 .author-quote {
   background: none;
 }
 
-footer {
-  background-color: $orange;
-  text-align: center;
-  padding: 3em 0 0 0;
-}
-
-.footer-social-link, .footer-nav-bar {
-  ul {
-    padding: 3em 0 3em 0;
-    background-color: none;
-  }
-
-  li {
-    display: inline;
-    font-size: .8em;
-    letter-spacing: .15em;
-    text-transform: uppercase;
-    padding-right: .8em;
-
-    a {
-      background: none;
-      color: #fff;
-      text-decoration: none;
-      transition: background-color .5s ease-in-out;
-      padding: 1em;
-      border-radius: .3em;
-    }
-
-    a:hover {
-      background-color: rgba(0, 0, 0, .3);
-    }
-
-  }
-}
-
-.footer-social-link ul {
-  li:first-child a:hover {
-    background-color: rgb(64, 153, 255);
-  }
-
-  li:nth-child(2) a:hover {
-    background-color: rgb(81, 127, 164);
-  }
-
-  li:nth-child(3) a:hover {
-    background-color: rgb(0,123,182);
-  }
-
-  li:nth-child(4) a:hover {
-    background-color: rgb(235,75,136);
-  }
-
-  img {
-    background: none;
-  }
-}
-
-.footer-nav-bar {
-  font-size: 1.2em;
-
-  ul {
-  padding: 0em 0 3em 0;
-  }
-
-}
-
 .keep-in-touch {
   color: #fff;
 }
 
-.projects-title {
-  text-transform: uppercase;
-  font-size: 2em;
-}
-
-.title-color {
-  color: $orange;
-}
-
-.projects-header-font {
-  font-size: 1.2em;
-}
-
-.shot-photograph {
-  font-size: .5em;
+.title {
   background: none;
+  color: $grey;
+  font-size: 1.7em;
+  font-weight: 400;
+  letter-spacing: .1em;
+  text-transform: uppercase;
 }
 
-.subtitle {
-  margin-top: 1em;
-  font-size: .5em;
+.what-i-can {
+  padding-bottom: 3em;
 }
 
-.img-border img {
-  border: .8em solid $ultralightgrey;
-  border-radius: .3em;
+.keep-in-touch, .philosophy {
+  color: #fff;
 }
