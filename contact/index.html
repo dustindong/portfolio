@@ -16,20 +16,26 @@
   <header class="project-details-nav">
     <nav>
       <ul>
-        <li><a href="../" alt="Home">Home</a></li>
-        <li><a href="../projects/" alt="Projects">Projects</a></li>
-        <li><a target="_blank" href="http://blog.worldonpause.com" alt="Photoblog">Photoblog</a></li>
-        <li><a href="../contact/" alt="">Hire Me!</a></li>
+        <li><a href="../" alt="">Home</a></li>
+        <li><a href="../projects/" alt="">Projects</a></li>
+        <li><a target="_blank" href="http://blog.worldonpause.com" alt="">Photoblog</a></li>
+        <li><a href="mailto:dustin@worldonpause.com" alt="">Hire Me!</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="projects">
-    <h1>Web & Mobile Products</h1>
-    <ul>
-      <li><a href="../imagery/"><img src="../images/imagery/imagery-screenshot.jpg"></a></li>
-      <li><a href="../booooks/"><img src="../images/book/booooks-screenshot.png"></a></li>
-    </ul>
+  <section class="contact">
+    <form class="email" action="mailer.php" method="post">
+    <h1>Name:</h1>
+    <input type="text" name="name" />
+    <h1>E-mail:</h1>
+    <input type="text" name="email" />
+    <h1>Subject:</h1>
+    <input type="text" name="subject" />
+    <h1>Message:</h1>
+    <textarea name="message"></textarea><p>
+    <input class="send" type="submit" value="send">
+    </form>
   </section>
 
   <footer> 
