@@ -15,6 +15,7 @@ ul, li {
 
 footer {
   background-color: #65C6BB;
+  clear: both;
   padding: 3em 0 0 0;
   text-align: center; }
   footer h1 {
@@ -262,34 +263,28 @@ header {
     line-height: 1.7em; }
   .skill-details-container img {
     padding-bottom: 1.5em; }
+  .skill-details-container a {
+    color: #65C6BB;
+    text-decoration: none; }
+  .skill-details-container a:hover {
+    color: #359086; }
 
-.contact h1 {
+.contact h1, .contact h2 {
   color: #65C6BB;
-  font-size: 1.2em;
-  padding-bottom: .4em; }
-.contact input[type=text], .contact textarea, .contact input[type=submit] {
-  border: 1px solid #ababab;
-  color: #787878;
-  font-size: 1em;
-  font-style: 'Lato';
-  margin-bottom: 1em;
-  max-width: 20em;
-  width: 80%;
-  padding: .5em; }
-.contact input[type=text]:focus {
-  border-color: #65C6BB;
-  outline: none; }
-.contact textarea {
-  height: 10em;
-  max-width: 40em; }
-.contact input[type=submit] {
-  background-color: #65C6BB;
-  color: #fff; }
-.contact input[type=submit]:focus {
-  cursor: pointer;
-  outline: none; }
-.contact input[type=submit]:hover {
-  background-color: #3ca297;
-  cursor: pointer; }
+  font-size: 2em;
+  letter-spacing: .01em;
+  padding: .2em; }
+.contact h3 {
+  color: #575757;
+  font-size: 1.5em;
+  padding: .3em; }
+.contact a {
+  color: #65C6BB;
+  text-decoration: none; }
+.contact a:hover {
+  color: #3ca297; }
+
+.selfie img {
+  padding: 0em 3em 3em 3em; }
 
 /*# sourceMappingURL=screen.css.map */

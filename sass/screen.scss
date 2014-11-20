@@ -176,48 +176,44 @@
   img {
     padding-bottom: 1.5em;
   }
+
+  a {
+    color: $teal;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: darken($teal, 20%);
+  }
 }
 
 .contact {
-  h1 {
+
+  h1, h2 {
     color: $teal;
-    font-size: 1.2em;
-    padding-bottom: .4em;
+    font-size: 2em;
+    letter-spacing: .01em;
+    padding: .2em;
   }
 
-  input[type=text], textarea, input[type=submit] {
-    border: 1px solid lighten($grey,20%);
-    color: $grey;
-    font-size: 1em;
-    font-style: 'Lato';
-    margin-bottom: 1em;
-    max-width: 20em;
-    width: 80%;
-    padding: .5em;
+  h3 {
+    color: $darkgrey;
+    font-size: 1.5em;
+    padding: .3em;
   }
 
-  input[type=text]:focus {
-    border-color: $teal;
-    outline: none;
+  a {
+    color: $teal;
+    text-decoration: none;
   }
 
-  textarea {
-    height: 10em;
-    max-width: 40em;
+  a:hover {
+    color: darken($teal,15%);
   }
+}
 
-  input[type=submit] {
-    background-color: $teal;
-    color: #fff;
-  }
-
-  input[type=submit]:focus {
-    cursor: pointer;
-    outline: none;
-  }
-
-  input[type=submit]:hover {
-    background-color: darken($teal, 15%);
-    cursor: pointer;
+.selfie {
+  img {
+    padding: 0em 3em 3em 3em;
   }
 }
