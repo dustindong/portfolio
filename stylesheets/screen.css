@@ -319,6 +319,7 @@ header {
   background-color: #EEEEEE; }
 
 .portrait-image img:last-of-type {
-  max-width: 30em; }
+  max-width: 30em;
+  padding-top: 2em; }
 
 /*# sourceMappingURL=screen.css.map */
