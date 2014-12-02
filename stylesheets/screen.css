@@ -93,7 +93,7 @@ header {
     margin: 0 auto; }
   header li {
     display: inline;
-    font-size: .6em;
+    font-size: .55em;
     letter-spacing: .15em;
     padding-right: 2em;
     text-transform: uppercase; }
@@ -139,10 +139,10 @@ header {
   background-color: #65C6BB;
   padding-bottom: 2em; }
 
-.work, .projects, .contact {
+.work, .contact {
   padding: 6em 0 6em 0;
   text-align: center; }
-  .work h1, .projects h1, .contact h1 {
+  .work h1, .contact h1 {
     padding-bottom: 2em;
     font-size: 2em;
     color: #787878; }
@@ -175,23 +175,51 @@ header {
     font-style: italic;
     font-weight: 400; }
 
-.projects ul {
-  background-color: none;
-  padding: 1em;
-  text-align: center; }
-.projects li {
-  display: inline;
-  font-size: .8em;
-  letter-spacing: .15em;
-  padding: 0 2em 2em 0; }
-.projects img {
-  border: 0.8em solid #EEEEEE;
-  border-radius: .3em;
-  margin-bottom: 1em;
-  padding: .5em;
-  transition: border .5s ease-in-out; }
-.projects a:hover img {
-  border: 0.8em solid #787878; }
+.subway-app, .imagery-app, .books-app {
+  padding: 6em 0 6em 0;
+  text-align: left; }
+  .subway-app a, .imagery-app a, .books-app a {
+    color: #65C6BB;
+    text-decoration: none;
+    transition: color .5s ease-in-out; }
+  .subway-app a:hover, .imagery-app a:hover, .books-app a:hover {
+    color: #359086; }
+  .subway-app ul, .imagery-app ul, .books-app ul {
+    background-color: none;
+    padding: 0em 1em 0em 1em;
+    text-align: center; }
+  .subway-app li, .imagery-app li, .books-app li {
+    display: inline-block;
+    font-size: .8em;
+    letter-spacing: .15em;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+    word-wrap: break-word; }
+  .subway-app h1, .imagery-app h1, .books-app h1 {
+    padding-top: 1em;
+    font-size: 3em; }
+  .subway-app h2, .imagery-app h2, .books-app h2 {
+    font-size: 1.3em;
+    padding-top: .5em;
+    color: #787878; }
+  .subway-app h3, .imagery-app h3, .books-app h3 {
+    color: #787878;
+    font-size: 1.2em;
+    padding-top: 2em; }
+  @media screen and (min-width: 755px) {
+    .subway-app li, .imagery-app li, .books-app li {
+      padding-left: 2em;
+      text-align: left; }
+    .subway-app h1, .imagery-app h1, .books-app h1 {
+      padding-top: 0; } }
+
+.subway-app {
+  background-color: #EEEEEE; }
+
+.imagery-app img, .books-app img {
+  border: 2em solid #EEEEEE;
+  border-radius: .5em; }
 
 .project-process {
   margin: 0 auto;
@@ -202,7 +230,7 @@ header {
     text-transform: uppercase; }
   .project-process h1 {
     font-size: 2em;
-    padding-top: 6em; }
+    padding-top: 3em; }
   .project-process h2 {
     margin-top: 1em;
     padding-bottom: 3em; }
@@ -256,7 +284,7 @@ header {
   .skill-details-container h2 {
     color: #65C6BB;
     font-size: 1.4em;
-    letter-spacing: .1em;
+    letter-spacing: .05em;
     padding-bottom: 1em; }
   .skill-details-container h3 {
     font-size: 1.1em;
@@ -286,5 +314,11 @@ header {
 
 .selfie img {
   padding: 0em 3em 3em 3em; }
+
+.grey-background {
+  background-color: #EEEEEE; }
+
+.portrait-image img:last-of-type {
+  max-width: 30em; }
 
 /*# sourceMappingURL=screen.css.map */
