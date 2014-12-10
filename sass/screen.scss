@@ -148,7 +148,7 @@
     padding-bottom: .5em;
   }
 
-  p {
+  h4, p {
     color: $grey;
     font-size: 1.1em;
     letter-spacing: 0.03em;
@@ -157,6 +157,10 @@
     margin: 0 auto;
     max-width: 25em;
     width: 100%;
+  }
+
+  h4 {
+    font-size: 2em;
   }
 
   a {

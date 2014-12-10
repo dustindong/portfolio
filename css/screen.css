@@ -297,18 +297,18 @@ header {
     font-size: 1.6em;
     padding-bottom: 0.5em; }
   /* line 151, C:/Users/Dustin/Desktop/Projects/portfolio/sass/screen.scss */
-  .project-process h4, .project-process p {
+  .project-process p {
     color: #787878;
-    font-size: 1.1em;
+    font-size: 1.5em;
     letter-spacing: 0.03em;
-    line-height: 1.8em;
+    line-height: 1.1em;
     padding: 1em 1em 4em 1em;
     margin: 0 auto;
     max-width: 25em;
     width: 100%; }
   /* line 162, C:/Users/Dustin/Desktop/Projects/portfolio/sass/screen.scss */
   .project-process h4 {
-    font-size: 2em; }
+    font-size: 1.5em; }
   /* line 166, C:/Users/Dustin/Desktop/Projects/portfolio/sass/screen.scss */
   .project-process a {
     color: #575757;
