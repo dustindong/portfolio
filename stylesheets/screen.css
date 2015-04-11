@@ -254,8 +254,7 @@ header {
     color: #65C6BB; }
   .project-process img {
     margin-bottom: 3em;
-    max-width: 80em;
-    width: 100%; }
+    max-width: 100em; }
 
 .img-border img {
   border: 0.8em solid #EEEEEE;
