@@ -1,68 +1,105 @@
 @import url(reset.css);
+/* line 1, ../sass/_base.scss */
 img {
-  max-width: 100%; }
+  max-width: 100%;
+}
 
+/* line 5, ../sass/_base.scss */
 html {
   box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
-  font-weight: 400; }
+  font-weight: 400;
+}
 
+/* line 11, ../sass/_base.scss */
 *, *:before, *:after {
-  box-sizing: inherit; }
+  box-sizing: inherit;
+}
 
+/* line 15, ../sass/_base.scss */
 ul, li {
-  background-color: transparent; }
+  background-color: transparent;
+}
 
+/* line 1, ../sass/_footer.scss */
 footer {
   background-color: #65C6BB;
   clear: both;
   padding: 5em 0 2em 0;
-  text-align: center; }
-  footer h1 {
-    color: #fff;
-    font-size: 1.7em;
-    font-weight: 400;
-    letter-spacing: .1em;
-    text-transform: uppercase; }
+  text-align: center;
+}
+/* line 7, ../sass/_footer.scss */
+footer h1 {
+  color: #fff;
+  font-size: 1.7em;
+  font-weight: 400;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
 
+/* line 17, ../sass/_footer.scss */
 .footer-social-link ul, .footer-nav-bar ul {
   background-color: none;
-  padding: 3em 0 3em 0; }
+  padding: 3em 0 3em 0;
+}
+/* line 22, ../sass/_footer.scss */
 .footer-social-link li, .footer-nav-bar li {
   display: inline;
   font-size: .6em;
   letter-spacing: .15em;
   padding-right: .8em;
-  text-transform: uppercase; }
-  @media screen and (min-width: 34em) {
-    .footer-social-link li, .footer-nav-bar li {
-      font-size: .8em; } }
-  .footer-social-link li a, .footer-nav-bar li a {
-    background: none;
-    border-radius: .3em;
-    color: #fff;
-    padding: 1em;
-    text-decoration: none;
-    transition: all .5s ease-in-out; }
-  .footer-social-link li a:hover, .footer-nav-bar li a:hover {
-    background-color: rgba(0, 0, 0, 0.3); }
+  text-transform: uppercase;
+}
+@media screen and (min-width: 34em) {
+  /* line 22, ../sass/_footer.scss */
+  .footer-social-link li, .footer-nav-bar li {
+    font-size: .8em;
+  }
+}
+/* line 33, ../sass/_footer.scss */
+.footer-social-link li a, .footer-nav-bar li a {
+  background: none;
+  border-radius: .3em;
+  color: #fff;
+  padding: 1em;
+  text-decoration: none;
+  transition: all .5s ease-in-out;
+}
+/* line 42, ../sass/_footer.scss */
+.footer-social-link li a:hover, .footer-nav-bar li a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
 
+/* line 49, ../sass/_footer.scss */
 .footer-nav-bar {
-  font-size: .8em; }
-  @media screen and (min-width: 34em) {
-    .footer-nav-bar {
-      font-size: 1.2em; } }
-  .footer-nav-bar ul {
-    padding: 0em 0 3em 0; }
-  .footer-nav-bar li:nth-child(4) {
-    padding-right: 0; }
-    .footer-nav-bar li:nth-child(4) a {
-      background-color: #4183D7;
-      border-bottom: 4px solid #286abd; }
-    .footer-nav-bar li:nth-child(4) a:hover {
-      background-color: #2c75d2;
-      border-bottom: 4px solid #1b467e; }
+  font-size: .8em;
+}
+@media screen and (min-width: 34em) {
+  /* line 49, ../sass/_footer.scss */
+  .footer-nav-bar {
+    font-size: 1.2em;
+  }
+}
+/* line 56, ../sass/_footer.scss */
+.footer-nav-bar ul {
+  padding: 0em 0 3em 0;
+}
+/* line 60, ../sass/_footer.scss */
+.footer-nav-bar li:nth-child(4) {
+  padding-right: 0;
+}
+/* line 63, ../sass/_footer.scss */
+.footer-nav-bar li:nth-child(4) a {
+  background-color: #4183D7;
+  border-bottom: 4px solid #286abd;
+}
+/* line 68, ../sass/_footer.scss */
+.footer-nav-bar li:nth-child(4) a:hover {
+  background-color: #2c75d2;
+  border-bottom: 4px solid #1b467e;
+}
 
+/* line 1, ../sass/_header.scss */
 header {
   background-attachment: fixed;
   background-color: #000;
@@ -72,229 +109,341 @@ header {
   color: #fff;
   font-size: 1.2em;
   position: relative;
-  text-align: center; }
-  @media screen and (min-width: 40em) {
-    header {
-      font-size: 2em; } }
-  header ul {
-    background-color: transparent;
-    padding-top: 2em;
-    margin: 0 auto; }
-  header li {
-    display: inline;
-    font-size: .55em;
-    letter-spacing: .15em;
-    padding-right: 2em;
-    text-transform: uppercase; }
-    header li a {
-      background: none;
-      border-radius: .3em;
-      color: #fff;
-      padding: .5em;
-      text-decoration: none;
-      transition: all .5s ease-in-out; }
-    header li a:hover {
-      background-color: rgba(0, 0, 0, 0.3); }
-  header li:last-child {
-    padding-right: 0; }
-    header li:last-child a {
-      background-color: #4183D7;
-      border-bottom: 4px solid #286abd; }
-    header li:last-child a:hover {
-      background-color: #2c75d2;
-      border-bottom: 4px solid #1b467e; }
+  text-align: center;
+}
+@media screen and (min-width: 40em) {
+  /* line 1, ../sass/_header.scss */
+  header {
+    font-size: 2em;
+  }
+}
+/* line 16, ../sass/_header.scss */
+header ul {
+  background-color: transparent;
+  padding-top: 2em;
+  margin: 0 auto;
+}
+/* line 22, ../sass/_header.scss */
+header li {
+  display: inline;
+  font-size: .55em;
+  letter-spacing: .15em;
+  padding-right: 2em;
+  text-transform: uppercase;
+}
+/* line 29, ../sass/_header.scss */
+header li a {
+  background: none;
+  border-radius: .3em;
+  color: #fff;
+  padding: .5em;
+  text-decoration: none;
+  transition: all .5s ease-in-out;
+}
+/* line 38, ../sass/_header.scss */
+header li a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+/* line 43, ../sass/_header.scss */
+header li:last-child {
+  padding-right: 0;
+}
+/* line 46, ../sass/_header.scss */
+header li:last-child a {
+  background-color: #4183D7;
+  border-bottom: 4px solid #286abd;
+}
+/* line 51, ../sass/_header.scss */
+header li:last-child a:hover {
+  background-color: #2c75d2;
+  border-bottom: 4px solid #1b467e;
+}
 
+/* line 59, ../sass/_header.scss */
 .homepage {
   background-image: url("../images/header4.jpg");
-  height: 95vh; }
-  .homepage h1, .homepage h2, .homepage h3, .homepage h4 {
-    background-color: transparent;
-    letter-spacing: .08em;
-    position: relative;
-    top: 25%;
-    transform: translateY(-25%);
-    word-spacing: .1em; }
-  .homepage h2 {
-    background-color: transparent;
-    font-size: 2.5em;
-    font-weight: 700;
-    margin-top: .5em; }
-  .homepage h3 {
-    margin-top: .2em; }
-  .homepage h4 {
-    font-size: .5em;
-    margin-top: .6em; }
+  height: 95vh;
+}
+/* line 63, ../sass/_header.scss */
+.homepage h1, .homepage h2, .homepage h3, .homepage h4 {
+  background-color: transparent;
+  letter-spacing: .08em;
+  position: relative;
+  top: 25%;
+  transform: translateY(-25%);
+  word-spacing: .1em;
+}
+/* line 72, ../sass/_header.scss */
+.homepage h2 {
+  background-color: transparent;
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-top: .5em;
+}
+/* line 79, ../sass/_header.scss */
+.homepage h3 {
+  margin-top: .2em;
+}
+/* line 83, ../sass/_header.scss */
+.homepage h4 {
+  font-size: .5em;
+  margin-top: .6em;
+}
 
+/* line 89, ../sass/_header.scss */
 .project-details-nav {
   background-color: #65C6BB;
-  padding-bottom: 2em; }
+  padding-bottom: 2em;
+}
 
+/* line 9, ../sass/screen.scss */
 .work, .contact, .projects {
   padding: 8em 0;
-  text-align: center; }
-  .work h1, .contact h1, .projects h1 {
-    color: #636363;
-    font-size: 2em;
-    padding-bottom: 2em;
-    text-transform: uppercase;
-    letter-spacing: .1em; }
+  text-align: center;
+}
+/* line 13, ../sass/screen.scss */
+.work h1, .contact h1, .projects h1 {
+  color: #636363;
+  font-size: 2em;
+  padding-bottom: 2em;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
 
+/* line 22, ../sass/screen.scss */
 .projects {
   background-attachment: fixed;
   background-color: #000;
-  background-image: url("../images/header-2.jpg");
+  background: linear-gradient(#3498db 0%, navy 50%), linear-gradient(to right, #3498db 0%, #c0392b 90%);
+  background-blend-mode: screen,difference, darken;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  text-align: center; }
-  .projects h3 {
-    padding-left: 1em;
-    padding-right: 1em;
-    padding-bottom: 2em;
-    text-align: left;
-    max-width: 35em;
-    margin: 0 auto;
-    line-height: 2em;
-    color: #fff;
-    letter-spacing: 1px; }
-  .projects h1 {
-    background: none;
-    color: #fff;
-    font-size: 2em;
-    padding-bottom: 2em; }
-  .projects li {
-    display: inline; }
-  .projects img {
-    margin-top: 3em;
-    padding: 0 1em; }
+  text-align: center;
+}
+/* line 35, ../sass/screen.scss */
+.projects h3 {
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 2em;
+  text-align: left;
+  max-width: 35em;
+  margin: 0 auto;
+  line-height: 2em;
+  color: #fff;
+  letter-spacing: 1px;
+}
+/* line 47, ../sass/screen.scss */
+.projects h1 {
+  background: none;
+  color: #fff;
+  font-size: 2em;
+  padding-bottom: 2em;
+}
+/* line 54, ../sass/screen.scss */
+.projects li {
+  display: inline;
+}
+/* line 58, ../sass/screen.scss */
+.projects img {
+  margin-top: 3em;
+  padding: 0 1em;
+}
 
+/* line 64, ../sass/screen.scss */
 .subway-app, .imagery-app, .books-app {
   padding: 6em 0 6em 0;
-  text-align: left; }
-  .subway-app a, .imagery-app a, .books-app a {
-    color: #65C6BB;
-    text-decoration: none;
-    transition: color .5s ease-in-out; }
-  .subway-app a:hover, .imagery-app a:hover, .books-app a:hover {
-    color: #359086; }
-  .subway-app ul, .imagery-app ul, .books-app ul {
-    background-color: none;
-    padding: 0em 1em 0em 1em;
-    text-align: center; }
+  text-align: left;
+}
+/* line 68, ../sass/screen.scss */
+.subway-app a, .imagery-app a, .books-app a {
+  color: #65C6BB;
+  text-decoration: none;
+  transition: color .5s ease-in-out;
+}
+/* line 74, ../sass/screen.scss */
+.subway-app a:hover, .imagery-app a:hover, .books-app a:hover {
+  color: #359086;
+}
+/* line 78, ../sass/screen.scss */
+.subway-app ul, .imagery-app ul, .books-app ul {
+  background-color: none;
+  padding: 0em 1em 0em 1em;
+  text-align: center;
+}
+/* line 84, ../sass/screen.scss */
+.subway-app li, .imagery-app li, .books-app li {
+  display: inline-block;
+  font-size: .8em;
+  letter-spacing: .15em;
+  padding: 0;
+  text-align: center;
+  vertical-align: middle;
+  word-wrap: break-word;
+}
+/* line 94, ../sass/screen.scss */
+.subway-app h1, .imagery-app h1, .books-app h1 {
+  padding-top: 1em;
+  font-size: 3em;
+}
+/* line 99, ../sass/screen.scss */
+.subway-app h2, .imagery-app h2, .books-app h2 {
+  font-size: 1.3em;
+  padding-top: .5em;
+  color: #636363;
+}
+/* line 105, ../sass/screen.scss */
+.subway-app h3, .imagery-app h3, .books-app h3 {
+  color: #636363;
+  font-size: 1.2em;
+  padding-top: 2em;
+}
+@media screen and (min-width: 755px) {
+  /* line 112, ../sass/screen.scss */
   .subway-app li, .imagery-app li, .books-app li {
-    display: inline-block;
-    font-size: .8em;
-    letter-spacing: .15em;
-    padding: 0;
-    text-align: center;
-    vertical-align: middle;
-    word-wrap: break-word; }
+    padding-left: 2em;
+    text-align: left;
+  }
+  /* line 117, ../sass/screen.scss */
   .subway-app h1, .imagery-app h1, .books-app h1 {
-    padding-top: 1em;
-    font-size: 3em; }
-  .subway-app h2, .imagery-app h2, .books-app h2 {
-    font-size: 1.3em;
-    padding-top: .5em;
-    color: #636363; }
-  .subway-app h3, .imagery-app h3, .books-app h3 {
-    color: #636363;
-    font-size: 1.2em;
-    padding-top: 2em; }
-  @media screen and (min-width: 755px) {
-    .subway-app li, .imagery-app li, .books-app li {
-      padding-left: 2em;
-      text-align: left; }
-    .subway-app h1, .imagery-app h1, .books-app h1 {
-      padding-top: 0; } }
+    padding-top: 0;
+  }
+}
 
+/* line 123, ../sass/screen.scss */
 .subway-app {
-  background-color: #EEEEEE; }
+  background-color: #EEEEEE;
+}
 
+/* line 128, ../sass/screen.scss */
 .imagery-app img, .books-app img {
   border: 2em solid #EEEEEE;
-  border-radius: .5em; }
+  border-radius: .5em;
+}
 
+/* line 134, ../sass/screen.scss */
 .project-process {
   margin: 0 auto;
   text-align: center;
-  color: #636363; }
-  .project-process h1, .project-process h2 {
-    letter-spacing: .1em;
-    text-transform: uppercase; }
-  .project-process h1 {
-    font-size: 2em;
-    padding-top: 3em; }
-  .project-process h2 {
-    margin-top: 1em;
-    padding-bottom: 3em; }
-  .project-process h3 {
-    color: #65C6BB;
-    font-size: 1.6em;
-    padding-bottom: .5em; }
-  .project-process h4, .project-process p {
-    color: #636363;
-    font-size: 1.1em;
-    letter-spacing: 0.03em;
-    line-height: 1.8em;
-    padding: 1em 1em 4em 1em;
-    margin: 0 auto;
-    max-width: 25em;
-    width: 100%; }
-  .project-process h4 {
-    font-size: 2em; }
-  .project-process a {
-    color: #575757;
-    font-size: 1.3em;
-    letter-spacing: .07em;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: color .5s ease-in-out;
-    word-spacing: .2em; }
-  .project-process a:hover {
-    color: #65C6BB; }
-  .project-process img {
-    margin-bottom: 3em;
-    max-width: 100em; }
+  color: #636363;
+}
+/* line 139, ../sass/screen.scss */
+.project-process h1, .project-process h2 {
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+/* line 144, ../sass/screen.scss */
+.project-process h1 {
+  font-size: 2em;
+  padding-top: 3em;
+}
+/* line 149, ../sass/screen.scss */
+.project-process h2 {
+  margin-top: 1em;
+  padding-bottom: 3em;
+}
+/* line 154, ../sass/screen.scss */
+.project-process h3 {
+  color: #65C6BB;
+  font-size: 1.6em;
+  padding-bottom: .5em;
+}
+/* line 160, ../sass/screen.scss */
+.project-process h4, .project-process p {
+  color: #636363;
+  font-size: 1.1em;
+  letter-spacing: 0.03em;
+  line-height: 1.8em;
+  padding: 1em 1em 4em 1em;
+  margin: 0 auto;
+  max-width: 25em;
+  width: 100%;
+}
+/* line 171, ../sass/screen.scss */
+.project-process h4 {
+  font-size: 2em;
+}
+/* line 175, ../sass/screen.scss */
+.project-process a {
+  color: #575757;
+  font-size: 1.3em;
+  letter-spacing: .07em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color .5s ease-in-out;
+  word-spacing: .2em;
+}
+/* line 185, ../sass/screen.scss */
+.project-process a:hover {
+  color: #65C6BB;
+}
+/* line 189, ../sass/screen.scss */
+.project-process img {
+  margin-bottom: 3em;
+  max-width: 100em;
+}
 
+/* line 196, ../sass/screen.scss */
 .img-border img {
   border: 0.8em solid #EEEEEE;
-  border-radius: .3em; }
+  border-radius: .3em;
+}
 
+/* line 201, ../sass/screen.scss */
 .title-color {
-  color: #65C6BB; }
+  color: #65C6BB;
+}
 
+/* line 206, ../sass/screen.scss */
 .selfie img {
-  padding: 0em 3em 3em 3em; }
+  padding: 0em 3em 3em 3em;
+}
 
+/* line 211, ../sass/screen.scss */
 .grey-background {
-  background-color: #EEEEEE; }
+  background-color: #EEEEEE;
+}
 
+/* line 216, ../sass/screen.scss */
 .portrait-image img:last-of-type {
   max-width: 30em;
-  padding-top: 2em; }
+  padding-top: 2em;
+}
 
+/* line 222, ../sass/screen.scss */
 .about {
   max-width: 35em;
   margin: 0 auto;
-  line-height: 2em; }
-  .about ul {
-    margin-top: 2em; }
-  .about li {
-    display: inline;
-    padding: 1em; }
-  .about h3 {
-    padding-left: 1em;
-    padding-right: 1em;
-    text-align: left;
-    margin-top: 3em;
-    letter-spacing: 1px; }
-  .about a {
-    text-decoration: none;
-    color: #65C6BB; }
-  .about a:hover {
-    color: #43b5a8; }
+  line-height: 2em;
+}
+/* line 227, ../sass/screen.scss */
+.about ul {
+  margin-top: 2em;
+}
+/* line 231, ../sass/screen.scss */
+.about li {
+  display: inline;
+  padding: 1em;
+}
+/* line 236, ../sass/screen.scss */
+.about h3 {
+  padding-left: 1em;
+  padding-right: 1em;
+  text-align: left;
+  margin-top: 3em;
+  letter-spacing: 1px;
+}
+/* line 244, ../sass/screen.scss */
+.about a {
+  text-decoration: none;
+  color: #65C6BB;
+}
+/* line 249, ../sass/screen.scss */
+.about a:hover {
+  color: #43b5a8;
+}
 
+/* line 255, ../sass/screen.scss */
 .contact-me h3 {
-  margin-top: 0; }
-
-/*# sourceMappingURL=screen.css.map */
+  margin-top: 0;
+}
