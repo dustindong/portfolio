@@ -224,6 +224,7 @@ header li:last-child a:hover {
 .projects h3 {
   padding-left: 1em;
   padding-right: 1em;
+  padding-top: 1em;
   text-align: left;
   max-width: 35em;
   margin: 0 auto;
@@ -231,44 +232,44 @@ header li:last-child a:hover {
   color: #fff;
   letter-spacing: 1px;
 }
-/* line 43, ../sass/screen.scss */
+/* line 44, ../sass/screen.scss */
 .projects h1 {
   background: none;
   color: #fff;
   font-size: 2em;
   padding-bottom: 1em;
 }
-/* line 50, ../sass/screen.scss */
+/* line 51, ../sass/screen.scss */
 .projects li {
   display: inline;
 }
-/* line 54, ../sass/screen.scss */
+/* line 55, ../sass/screen.scss */
 .projects img {
   padding: 0 1em;
 }
 
-/* line 59, ../sass/screen.scss */
+/* line 60, ../sass/screen.scss */
 .subway-app, .imagery-app, .books-app {
   padding: 6em 0 6em 0;
   text-align: left;
 }
-/* line 63, ../sass/screen.scss */
+/* line 64, ../sass/screen.scss */
 .subway-app a, .imagery-app a, .books-app a {
   color: #65C6BB;
   text-decoration: none;
   transition: color .5s ease-in-out;
 }
-/* line 69, ../sass/screen.scss */
+/* line 70, ../sass/screen.scss */
 .subway-app a:hover, .imagery-app a:hover, .books-app a:hover {
   color: #359086;
 }
-/* line 73, ../sass/screen.scss */
+/* line 74, ../sass/screen.scss */
 .subway-app ul, .imagery-app ul, .books-app ul {
   background-color: none;
   padding: 0em 1em 0em 1em;
   text-align: center;
 }
-/* line 79, ../sass/screen.scss */
+/* line 80, ../sass/screen.scss */
 .subway-app li, .imagery-app li, .books-app li {
   display: inline-block;
   font-size: .8em;
@@ -278,74 +279,74 @@ header li:last-child a:hover {
   vertical-align: middle;
   word-wrap: break-word;
 }
-/* line 89, ../sass/screen.scss */
+/* line 90, ../sass/screen.scss */
 .subway-app h1, .imagery-app h1, .books-app h1 {
   padding-top: 1em;
   font-size: 3em;
 }
-/* line 94, ../sass/screen.scss */
+/* line 95, ../sass/screen.scss */
 .subway-app h2, .imagery-app h2, .books-app h2 {
   font-size: 1.3em;
   padding-top: .5em;
   color: #636363;
 }
-/* line 100, ../sass/screen.scss */
+/* line 101, ../sass/screen.scss */
 .subway-app h3, .imagery-app h3, .books-app h3 {
   color: #636363;
   font-size: 1.2em;
   padding-top: 2em;
 }
 @media screen and (min-width: 755px) {
-  /* line 107, ../sass/screen.scss */
+  /* line 108, ../sass/screen.scss */
   .subway-app li, .imagery-app li, .books-app li {
     padding-left: 2em;
     text-align: left;
   }
-  /* line 112, ../sass/screen.scss */
+  /* line 113, ../sass/screen.scss */
   .subway-app h1, .imagery-app h1, .books-app h1 {
     padding-top: 0;
   }
 }
 
-/* line 118, ../sass/screen.scss */
+/* line 119, ../sass/screen.scss */
 .subway-app {
   background-color: #EEEEEE;
 }
 
-/* line 123, ../sass/screen.scss */
+/* line 124, ../sass/screen.scss */
 .imagery-app img, .books-app img {
   border: 2em solid #EEEEEE;
   border-radius: .5em;
 }
 
-/* line 129, ../sass/screen.scss */
+/* line 130, ../sass/screen.scss */
 .project-process {
   margin: 0 auto;
   text-align: center;
   color: #636363;
 }
-/* line 134, ../sass/screen.scss */
+/* line 135, ../sass/screen.scss */
 .project-process h1, .project-process h2 {
   letter-spacing: .1em;
   text-transform: uppercase;
 }
-/* line 139, ../sass/screen.scss */
+/* line 140, ../sass/screen.scss */
 .project-process h1 {
   font-size: 2em;
   padding-top: 3em;
 }
-/* line 144, ../sass/screen.scss */
+/* line 145, ../sass/screen.scss */
 .project-process h2 {
   margin-top: 1em;
   padding-bottom: 3em;
 }
-/* line 149, ../sass/screen.scss */
+/* line 150, ../sass/screen.scss */
 .project-process h3 {
   color: #65C6BB;
   font-size: 1.6em;
   padding-bottom: .5em;
 }
-/* line 155, ../sass/screen.scss */
+/* line 156, ../sass/screen.scss */
 .project-process h4, .project-process p {
   color: #636363;
   font-size: 1.1em;
@@ -356,11 +357,11 @@ header li:last-child a:hover {
   max-width: 25em;
   width: 100%;
 }
-/* line 166, ../sass/screen.scss */
+/* line 167, ../sass/screen.scss */
 .project-process h4 {
   font-size: 2em;
 }
-/* line 170, ../sass/screen.scss */
+/* line 171, ../sass/screen.scss */
 .project-process a {
   color: #575757;
   font-size: 1.3em;
@@ -370,59 +371,59 @@ header li:last-child a:hover {
   transition: color .5s ease-in-out;
   word-spacing: .2em;
 }
-/* line 180, ../sass/screen.scss */
+/* line 181, ../sass/screen.scss */
 .project-process a:hover {
   color: #65C6BB;
 }
-/* line 184, ../sass/screen.scss */
+/* line 185, ../sass/screen.scss */
 .project-process img {
   margin-bottom: 3em;
   max-width: 100em;
 }
 
-/* line 191, ../sass/screen.scss */
+/* line 192, ../sass/screen.scss */
 .img-border img {
   border: 0.8em solid #EEEEEE;
   border-radius: .3em;
 }
 
-/* line 196, ../sass/screen.scss */
+/* line 197, ../sass/screen.scss */
 .title-color {
   color: #65C6BB;
 }
 
-/* line 201, ../sass/screen.scss */
+/* line 202, ../sass/screen.scss */
 .selfie img {
   padding: 0em 3em 3em 3em;
 }
 
-/* line 206, ../sass/screen.scss */
+/* line 207, ../sass/screen.scss */
 .grey-background {
   background-color: #EEEEEE;
 }
 
-/* line 211, ../sass/screen.scss */
+/* line 212, ../sass/screen.scss */
 .portrait-image img:last-of-type {
   max-width: 30em;
   padding-top: 2em;
 }
 
-/* line 217, ../sass/screen.scss */
+/* line 218, ../sass/screen.scss */
 .about {
   max-width: 35em;
   margin: 0 auto;
   line-height: 2em;
 }
-/* line 222, ../sass/screen.scss */
+/* line 223, ../sass/screen.scss */
 .about ul {
   margin-top: 2em;
 }
-/* line 226, ../sass/screen.scss */
+/* line 227, ../sass/screen.scss */
 .about li {
   display: inline;
   padding: 1em;
 }
-/* line 231, ../sass/screen.scss */
+/* line 232, ../sass/screen.scss */
 .about h3 {
   padding-left: 1em;
   padding-right: 1em;
@@ -430,32 +431,32 @@ header li:last-child a:hover {
   margin-top: 3em;
   letter-spacing: 1px;
 }
-/* line 239, ../sass/screen.scss */
+/* line 240, ../sass/screen.scss */
 .about a {
   text-decoration: none;
   color: #65C6BB;
 }
-/* line 244, ../sass/screen.scss */
+/* line 245, ../sass/screen.scss */
 .about a:hover {
   color: #43b5a8;
 }
 
-/* line 250, ../sass/screen.scss */
+/* line 251, ../sass/screen.scss */
 .contact-me h3 {
   margin-top: 0;
 }
 
-/* line 255, ../sass/screen.scss */
+/* line 256, ../sass/screen.scss */
 .midnight-bg {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/dreamitreel-bg.jpg");
 }
 
-/* line 259, ../sass/screen.scss */
+/* line 260, ../sass/screen.scss */
 .asphalt-bg {
   background: #34495e;
 }
 
-/* line 263, ../sass/screen.scss */
+/* line 264, ../sass/screen.scss */
 .projects-fp-image {
   float: left;
 }
