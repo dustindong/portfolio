@@ -213,13 +213,7 @@ header li:last-child a:hover {
 /* line 22, ../sass/screen.scss */
 .projects {
   background-attachment: fixed;
-  background-color: #000;
-  background: linear-gradient(#3498db 0%, navy 50%), linear-gradient(to right, #3498db 0%, #c0392b 90%);
-  background-blend-mode: screen,difference, darken;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center;
+  background-color: #65C6BB;
 }
 /* line 35, ../sass/screen.scss */
 .projects h3 {
@@ -238,7 +232,7 @@ header li:last-child a:hover {
   background: none;
   color: #fff;
   font-size: 2em;
-  padding-bottom: 2em;
+  padding-bottom: 0;
 }
 /* line 54, ../sass/screen.scss */
 .projects li {

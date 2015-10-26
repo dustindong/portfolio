@@ -21,15 +21,15 @@
 
 .projects {
   background-attachment: fixed;
-  background-color: #000;
-  background: 
-    linear-gradient(#3498db 0%, navy 50%), 
-    linear-gradient(to right, #3498db 0%, #c0392b 90%);
-  background-blend-mode: screen,difference, darken;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center;
+  background-color: $teal;
+  // background: 
+  //  linear-gradient(#3498db 0%, navy 50%), 
+  //  linear-gradient(to right, #3498db 0%, #c0392b 90%);
+  // background-blend-mode: screen,difference, darken;
+  //background-position: center center;
+  //background-repeat: no-repeat;
+  //background-size: cover;
+  //text-align: center;
 
 
   h3 {
@@ -48,7 +48,7 @@
     background: none;
     color: #fff;
     font-size: 2em;
-    padding-bottom: 2em;
+    padding-bottom: 0;
   }
 
   li {
