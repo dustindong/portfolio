@@ -480,18 +480,19 @@ header li:last-child a:hover {
 /* line 287, ../sass/screen.scss */
 .simplenight img {
   padding-bottom: 1.5em;
+  padding-top: 3em;
 }
 
-/* line 292, ../sass/screen.scss */
+/* line 293, ../sass/screen.scss */
 .asphalt-bg {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/alexdong-project.jpg") center center;
 }
-/* line 295, ../sass/screen.scss */
+/* line 296, ../sass/screen.scss */
 .asphalt-bg img {
   padding-bottom: 1em;
 }
 
-/* line 300, ../sass/screen.scss */
+/* line 301, ../sass/screen.scss */
 .projects-fp-image {
   float: left;
 }
