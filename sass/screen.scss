@@ -21,21 +21,18 @@
 
 .projects {
   background-attachment: fixed;
-  background-color: $teal;
-  // background: 
-  //  linear-gradient(#3498db 0%, navy 50%), 
-  //  linear-gradient(to right, #3498db 0%, #c0392b 90%);
-  // background-blend-mode: screen,difference, darken;
-  //background-position: center center;
-  //background-repeat: no-repeat;
-  //background-size: cover;
-  //text-align: center;
+  background-color: #000;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: auto;
 
 
-  h3 {
+  h3, h4 {
     padding-left: 1em;
     padding-right: 1em;
-    padding-bottom: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
     text-align: left;
     max-width: 35em;
     margin: 0 auto;
@@ -44,11 +41,30 @@
     letter-spacing: 1px;
   }
 
+  h4 {
+    padding-bottom: 3em;
+  }
+
   h1 {
     background: none;
     color: #fff;
     font-size: 2em;
-    padding-bottom: 0;
+    padding-bottom: 1em;
+  }
+
+  .project-link-url {
+    padding: .6em 1em;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    transition: all .25s ease-in-out;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: .8em;
+    &:hover {
+      background-color: $teal;
+      border: none;
+    }
+
   }
 
   li {
@@ -56,8 +72,13 @@
   }
 
   img {
-    margin-top: 3em;
     padding: 0 1em;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    transition: color .5s ease-in-out;
   }
 }
 
@@ -182,9 +203,7 @@
     word-spacing: .2em;
   }
 
-  a:hover {
-    color: $teal;
-  }
+
 
   img {
     margin-bottom: 3em;
@@ -255,4 +274,33 @@
   h3 {
     margin-top: 0;
   }
+}
+
+.midnight-bg {
+  background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("../images/dreamitreel-bg.jpg") center center; 
+
+  img {
+    padding-bottom: 1em;
+  }
+}
+
+.simplenight {
+  background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("../images/simplenight-bg.jpg") center center; 
+
+  img {
+    padding-bottom: 1.5em;
+    padding-top: 3em;
+  }
+}
+
+.asphalt-bg {
+  background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("../images/alexdong-project.jpg") center center; 
+
+  img {
+    padding-bottom: 1em;
+  }
+}
+
+.projects-fp-image {
+  float: left;
 }

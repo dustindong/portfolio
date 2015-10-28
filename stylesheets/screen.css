@@ -213,13 +213,18 @@ header li:last-child a:hover {
 /* line 22, ../sass/screen.scss */
 .projects {
   background-attachment: fixed;
-  background-color: #65C6BB;
+  background-color: #000;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: auto;
 }
-/* line 35, ../sass/screen.scss */
-.projects h3 {
+/* line 31, ../sass/screen.scss */
+.projects h3, .projects h4 {
   padding-left: 1em;
   padding-right: 1em;
-  padding-bottom: 2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
   text-align: left;
   max-width: 35em;
   margin: 0 auto;
@@ -227,45 +232,69 @@ header li:last-child a:hover {
   color: #fff;
   letter-spacing: 1px;
 }
-/* line 47, ../sass/screen.scss */
+/* line 44, ../sass/screen.scss */
+.projects h4 {
+  padding-bottom: 3em;
+}
+/* line 48, ../sass/screen.scss */
 .projects h1 {
   background: none;
   color: #fff;
   font-size: 2em;
-  padding-bottom: 0;
+  padding-bottom: 1em;
 }
-/* line 54, ../sass/screen.scss */
+/* line 55, ../sass/screen.scss */
+.projects .project-link-url {
+  padding: .6em 1em;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  transition: all .25s ease-in-out;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: .8em;
+}
+/* line 63, ../sass/screen.scss */
+.projects .project-link-url:hover {
+  background-color: #65C6BB;
+  border: none;
+}
+/* line 70, ../sass/screen.scss */
 .projects li {
   display: inline;
 }
-/* line 58, ../sass/screen.scss */
+/* line 74, ../sass/screen.scss */
 .projects img {
-  margin-top: 3em;
   padding: 0 1em;
 }
+/* line 78, ../sass/screen.scss */
+.projects a {
+  color: #fff;
+  text-decoration: none;
+  transition: color .5s ease-in-out;
+}
 
-/* line 64, ../sass/screen.scss */
+/* line 85, ../sass/screen.scss */
 .subway-app, .imagery-app, .books-app {
   padding: 6em 0 6em 0;
   text-align: left;
 }
-/* line 68, ../sass/screen.scss */
+/* line 89, ../sass/screen.scss */
 .subway-app a, .imagery-app a, .books-app a {
   color: #65C6BB;
   text-decoration: none;
   transition: color .5s ease-in-out;
 }
-/* line 74, ../sass/screen.scss */
+/* line 95, ../sass/screen.scss */
 .subway-app a:hover, .imagery-app a:hover, .books-app a:hover {
   color: #359086;
 }
-/* line 78, ../sass/screen.scss */
+/* line 99, ../sass/screen.scss */
 .subway-app ul, .imagery-app ul, .books-app ul {
   background-color: none;
   padding: 0em 1em 0em 1em;
   text-align: center;
 }
-/* line 84, ../sass/screen.scss */
+/* line 105, ../sass/screen.scss */
 .subway-app li, .imagery-app li, .books-app li {
   display: inline-block;
   font-size: .8em;
@@ -275,74 +304,74 @@ header li:last-child a:hover {
   vertical-align: middle;
   word-wrap: break-word;
 }
-/* line 94, ../sass/screen.scss */
+/* line 115, ../sass/screen.scss */
 .subway-app h1, .imagery-app h1, .books-app h1 {
   padding-top: 1em;
   font-size: 3em;
 }
-/* line 99, ../sass/screen.scss */
+/* line 120, ../sass/screen.scss */
 .subway-app h2, .imagery-app h2, .books-app h2 {
   font-size: 1.3em;
   padding-top: .5em;
   color: #636363;
 }
-/* line 105, ../sass/screen.scss */
+/* line 126, ../sass/screen.scss */
 .subway-app h3, .imagery-app h3, .books-app h3 {
   color: #636363;
   font-size: 1.2em;
   padding-top: 2em;
 }
 @media screen and (min-width: 755px) {
-  /* line 112, ../sass/screen.scss */
+  /* line 133, ../sass/screen.scss */
   .subway-app li, .imagery-app li, .books-app li {
     padding-left: 2em;
     text-align: left;
   }
-  /* line 117, ../sass/screen.scss */
+  /* line 138, ../sass/screen.scss */
   .subway-app h1, .imagery-app h1, .books-app h1 {
     padding-top: 0;
   }
 }
 
-/* line 123, ../sass/screen.scss */
+/* line 144, ../sass/screen.scss */
 .subway-app {
   background-color: #EEEEEE;
 }
 
-/* line 128, ../sass/screen.scss */
+/* line 149, ../sass/screen.scss */
 .imagery-app img, .books-app img {
   border: 2em solid #EEEEEE;
   border-radius: .5em;
 }
 
-/* line 134, ../sass/screen.scss */
+/* line 155, ../sass/screen.scss */
 .project-process {
   margin: 0 auto;
   text-align: center;
   color: #636363;
 }
-/* line 139, ../sass/screen.scss */
+/* line 160, ../sass/screen.scss */
 .project-process h1, .project-process h2 {
   letter-spacing: .1em;
   text-transform: uppercase;
 }
-/* line 144, ../sass/screen.scss */
+/* line 165, ../sass/screen.scss */
 .project-process h1 {
   font-size: 2em;
   padding-top: 3em;
 }
-/* line 149, ../sass/screen.scss */
+/* line 170, ../sass/screen.scss */
 .project-process h2 {
   margin-top: 1em;
   padding-bottom: 3em;
 }
-/* line 154, ../sass/screen.scss */
+/* line 175, ../sass/screen.scss */
 .project-process h3 {
   color: #65C6BB;
   font-size: 1.6em;
   padding-bottom: .5em;
 }
-/* line 160, ../sass/screen.scss */
+/* line 181, ../sass/screen.scss */
 .project-process h4, .project-process p {
   color: #636363;
   font-size: 1.1em;
@@ -353,11 +382,11 @@ header li:last-child a:hover {
   max-width: 25em;
   width: 100%;
 }
-/* line 171, ../sass/screen.scss */
+/* line 192, ../sass/screen.scss */
 .project-process h4 {
   font-size: 2em;
 }
-/* line 175, ../sass/screen.scss */
+/* line 196, ../sass/screen.scss */
 .project-process a {
   color: #575757;
   font-size: 1.3em;
@@ -367,59 +396,55 @@ header li:last-child a:hover {
   transition: color .5s ease-in-out;
   word-spacing: .2em;
 }
-/* line 185, ../sass/screen.scss */
-.project-process a:hover {
-  color: #65C6BB;
-}
-/* line 189, ../sass/screen.scss */
+/* line 208, ../sass/screen.scss */
 .project-process img {
   margin-bottom: 3em;
   max-width: 100em;
 }
 
-/* line 196, ../sass/screen.scss */
+/* line 215, ../sass/screen.scss */
 .img-border img {
   border: 0.8em solid #EEEEEE;
   border-radius: .3em;
 }
 
-/* line 201, ../sass/screen.scss */
+/* line 220, ../sass/screen.scss */
 .title-color {
   color: #65C6BB;
 }
 
-/* line 206, ../sass/screen.scss */
+/* line 225, ../sass/screen.scss */
 .selfie img {
   padding: 0em 3em 3em 3em;
 }
 
-/* line 211, ../sass/screen.scss */
+/* line 230, ../sass/screen.scss */
 .grey-background {
   background-color: #EEEEEE;
 }
 
-/* line 216, ../sass/screen.scss */
+/* line 235, ../sass/screen.scss */
 .portrait-image img:last-of-type {
   max-width: 30em;
   padding-top: 2em;
 }
 
-/* line 222, ../sass/screen.scss */
+/* line 241, ../sass/screen.scss */
 .about {
   max-width: 35em;
   margin: 0 auto;
   line-height: 2em;
 }
-/* line 227, ../sass/screen.scss */
+/* line 246, ../sass/screen.scss */
 .about ul {
   margin-top: 2em;
 }
-/* line 231, ../sass/screen.scss */
+/* line 250, ../sass/screen.scss */
 .about li {
   display: inline;
   padding: 1em;
 }
-/* line 236, ../sass/screen.scss */
+/* line 255, ../sass/screen.scss */
 .about h3 {
   padding-left: 1em;
   padding-right: 1em;
@@ -427,17 +452,50 @@ header li:last-child a:hover {
   margin-top: 3em;
   letter-spacing: 1px;
 }
-/* line 244, ../sass/screen.scss */
+/* line 263, ../sass/screen.scss */
 .about a {
   text-decoration: none;
   color: #65C6BB;
 }
-/* line 249, ../sass/screen.scss */
+/* line 268, ../sass/screen.scss */
 .about a:hover {
   color: #43b5a8;
 }
 
-/* line 255, ../sass/screen.scss */
+/* line 274, ../sass/screen.scss */
 .contact-me h3 {
   margin-top: 0;
+}
+
+/* line 279, ../sass/screen.scss */
+.midnight-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/dreamitreel-bg.jpg") center center;
+}
+/* line 282, ../sass/screen.scss */
+.midnight-bg img {
+  padding-bottom: 1em;
+}
+
+/* line 287, ../sass/screen.scss */
+.simplenight {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/simplenight-bg.jpg") center center;
+}
+/* line 290, ../sass/screen.scss */
+.simplenight img {
+  padding-bottom: 1.5em;
+  padding-top: 3em;
+}
+
+/* line 296, ../sass/screen.scss */
+.asphalt-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/alexdong-project.jpg") center center;
+}
+/* line 299, ../sass/screen.scss */
+.asphalt-bg img {
+  padding-bottom: 1em;
+}
+
+/* line 304, ../sass/screen.scss */
+.projects-fp-image {
+  float: left;
 }
