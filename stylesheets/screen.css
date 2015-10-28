@@ -496,6 +496,37 @@ header li:last-child a:hover {
 }
 
 /* line 304, ../sass/screen.scss */
+.imagery-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/imagery-bg.jpg") center center;
+}
+/* line 307, ../sass/screen.scss */
+.imagery-bg img {
+  padding-bottom: 1em;
+}
+
+/* line 312, ../sass/screen.scss */
+.beachbum-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/beachbum-bg.jpg") center center;
+}
+/* line 315, ../sass/screen.scss */
+.beachbum-bg img {
+  padding-bottom: 1em;
+}
+
+/* line 320, ../sass/screen.scss */
+.gomta-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/gomta-bg.jpg") center center;
+}
+/* line 323, ../sass/screen.scss */
+.gomta-bg h1 {
+  text-transform: none;
+}
+/* line 327, ../sass/screen.scss */
+.gomta-bg img {
+  padding-bottom: 1em;
+}
+
+/* line 332, ../sass/screen.scss */
 .projects-fp-image {
   float: left;
 }

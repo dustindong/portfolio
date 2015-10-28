@@ -301,6 +301,34 @@
   }
 }
 
+.imagery-bg {
+  background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("../images/imagery-bg.jpg") center center; 
+
+  img {
+    padding-bottom: 1em;
+  }
+}
+
+.beachbum-bg {
+  background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("../images/beachbum-bg.jpg") center center; 
+
+  img {
+    padding-bottom: 1em;
+  }
+}
+
+.gomta-bg {
+  background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("../images/gomta-bg.jpg") center center; 
+
+  h1 {
+    text-transform: none;
+  }
+
+  img {
+    padding-bottom: 1em;
+  }
+}
+
 .projects-fp-image {
   float: left;
 }
