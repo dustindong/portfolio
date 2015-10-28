@@ -219,7 +219,7 @@ header li:last-child a:hover {
   background-size: cover;
   overflow: auto;
 }
-/* line 32, ../sass/screen.scss */
+/* line 31, ../sass/screen.scss */
 .projects h3, .projects h4 {
   padding-left: 1em;
   padding-right: 1em;
@@ -232,18 +232,18 @@ header li:last-child a:hover {
   color: #fff;
   letter-spacing: 1px;
 }
-/* line 45, ../sass/screen.scss */
+/* line 44, ../sass/screen.scss */
 .projects h4 {
   padding-bottom: 3em;
 }
-/* line 49, ../sass/screen.scss */
+/* line 48, ../sass/screen.scss */
 .projects h1 {
   background: none;
   color: #fff;
   font-size: 2em;
   padding-bottom: 1em;
 }
-/* line 56, ../sass/screen.scss */
+/* line 55, ../sass/screen.scss */
 .projects .project-link-url {
   padding: .6em 1em;
   border: 1px solid #fff;
@@ -253,7 +253,7 @@ header li:last-child a:hover {
   text-transform: uppercase;
   font-size: .8em;
 }
-/* line 64, ../sass/screen.scss */
+/* line 63, ../sass/screen.scss */
 .projects .project-link-url:hover {
   background-color: #65C6BB;
   border: none;
