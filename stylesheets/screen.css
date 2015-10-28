@@ -161,7 +161,7 @@ header li:last-child a:hover {
 
 /* line 59, ../sass/_header.scss */
 .homepage {
-  background-image: url("../images/header4.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/header4.jpg");
   height: 95vh;
 }
 /* line 63, ../sass/_header.scss */
