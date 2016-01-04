@@ -530,3 +530,7 @@ header li:last-child a:hover {
 .projects-fp-image {
   float: left;
 }
+
+.gomta-bg, .beachbum-bg, .asphalt-bg, .imgaery-bg, .midnight-bg, .simplenight {
+  background-size: cover;
+}
