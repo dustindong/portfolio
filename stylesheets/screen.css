@@ -19,7 +19,7 @@ h2 {
 
 h3 {
   font-size: 2rem;
-  text-align: center;
+  text-align: left;
 }
 
 .header {
@@ -35,7 +35,8 @@ h3 {
 
 .work {
   font-size: 16px;
-  text-align: center;
+  margin: 0 auto;
+  max-width: 900px;
 }
 
 .header-wrapper {
@@ -52,7 +53,7 @@ h3 {
   font-family: 'Poppins', sans-serif;
   margin: 0 auto;
   padding-top: 3rem;
-  width: 900px;
+  max-width: 900px;
 }
 
 .case-study-container img {
