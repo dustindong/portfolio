@@ -3,17 +3,18 @@ body {
   color: #303030;
   font-family: 'Poppins', sans-serif;
   padding: 2rem;
+  padding-bottom: 6rem;
 }
 
 h1 {
-  font-size:  3rem;
+  font-size: 3rem;
   line-height: 5rem;
   padding: 2rem 0;
 }
 
 h2 {
   font-size: 36px;
-  line-height: 50px;
+  line-height: 58px;
   margin-top: 2rem;
 }
 
@@ -33,7 +34,7 @@ h3 {
   max-width: 900px;
 }
 
-.work {
+.work, .case-studies, nav {
   font-size: 16px;
   margin: 0 auto;
   max-width: 900px;
@@ -86,59 +87,57 @@ h3 {
   margin-top: 1.5rem;
 }
 
+.case-studies {
+  padding-top: 128px;
+}
 
-/* Gradient Effect */
+.case-studies img {
+  max-width: 900px;
+}
 
-.photo{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.case-studies h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  padding-bottom: 3rem;
+}
+
+.case-studies h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.case-studies h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 58px;
+  margin-top: 4rem;
+}
+
+.case-studies label {
+  color: #7f8c8d;
   display: block;
+  padding-top: 8rem;
 }
 
-.photo img{
-  width: 200px;
-  height: 280px;
-  object-fit: cover;
-  filter: grayscale(100%) contrast(120%);
-  box-shadow: 10px 15px 25px 0 rgba(0,0,0,.2);
-  display: block;
-  transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
-  margin-top: -10px;
+.case-studies p {
+  padding-top: 2rem;
+  line-height: 32px;
 }
 
-.photo:hover img{
-  box-shadow: 1px 1px 10px 0 rgba(0,0,0,.1);
+.case-studies li {
+  padding-top: 2rem;
 }
 
-.photo .glow-wrap{
-  overflow: hidden;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  margin-top: -10px;
+.pd-top-3 {
+  padding-top: 3rem;
 }
 
-.photo .glow{
-  display: block;
-  position:absolute;
-  width: 40%;
-  height: 200%;
-  background: rgba(255,255,255,.2);
-  top: 0;
-  filter: blur(5px);
-  transform: rotate(45deg) translate(-450%, 0);
-  transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+nav header {
+  font-size: 20px;
+  font-weight: 600;
 }
 
-.photo:hover .glow{
-  transform: rotate(45deg) translate(450%, 0);
-  transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-
-.photo:hover img,
-.photo:hover .glow-wrap{
-  margin-top: 0;
+nav a {
+  color: #303030;
+  text-decoration: none;
 }
