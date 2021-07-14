@@ -23,6 +23,24 @@ h3 {
   text-align: left;
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 2rem;
+}
+
+nav ul {
+  margin-top: -10px;
+}
+
+ul {
+  line-height: 32px;
+}
+
 .header {
   color: #303030;
   font-family: 'Poppins', sans-serif;
@@ -92,7 +110,8 @@ h3 {
 }
 
 .case-studies img {
-  max-width: 900px;
+  max-width: 100%;
+  height: auto;
 }
 
 .case-studies h1 {
@@ -132,6 +151,10 @@ h3 {
   padding-top: 3rem;
 }
 
+.pdt-4 {
+  padding-top: 4rem;
+}
+
 nav header {
   font-size: 20px;
   font-weight: 600;
@@ -140,4 +163,63 @@ nav header {
 nav a {
   color: #303030;
   text-decoration: none;
+}
+
+.pdb-3 {
+  padding-bottom: 3rem;
+}
+
+.pdb-2 {
+  padding-bottom: 2rem;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.oversized-image img {
+  max-width: 1300px;
+  margin-left: -200px;
+}
+
+.oversized-image-m img {
+  max-width: 1150px;
+  margin-left: -125px;
+}
+
+.about-me {
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 9rem 0;
+}
+
+.about-me-image {
+  width: 40%;
+  height: auto;
+}
+
+.about-me img {
+  max-width: 300px;
+}
+
+.about-me-text, .about-me-image {
+  display: inline-block;
+}
+
+.about-me-text {
+  max-width: 59%;
+  vertical-align: top;
+}
+
+.about-me-text p {
+  padding-top: 3rem;
+  line-height: 2rem;
+}
+
+.about-me h2 {
+  margin-top: -1rem;
+}
+
+.about-me a {
+  color: #c0c0c0;
 }

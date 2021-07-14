@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Dustin | Product Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheets/reset.css">
+  <link rel="stylesheet" href="stylesheets/screen.css">
+</head>
+
+<body>
+
+  <nav>
+    <a href="index.html">
+      <header>Dustin Dong</header>
+    </a>
+    <ul>
+      <li>
+        <a href="mailto:dustin@worldonpause.com">Contact</a>
+      </li>
+      <li>
+        <a href="about.html">About</a>
+      </li>
+      <li>
+        <a href="Resume.pdf" target="_blank">Resume</a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/dustindong/" target="_blank">LinkedIn</a>
+    </ul>
+  </nav>
+
+  <section class="case-studies">
+    <h1>Permissions Redesign</h1>
+    <img src="images/permissions.png">
+    <label>Understanding The Problem</label>
+    <h2>Permissions were too limited in our system</h2>
+    <p class="pdb-3">When we launched ValenceDocs, our product was new with limited features. Our permissions started simple, allowing the admin to select a few different roles for their users. As our users and features grew, customers wanted the ability to control every aspect of the system.</p>
+    <p>Users were only allowed to choose admin or standard role. for each property they were allowed to select read, write, or admin access.</p>
+    <label>Customer Insights</label>
+    <h3>1. Users wanted to restrict or allow access to any part of the system</h3>
+    <p>Based on feedback, having the ability to allow or deny access to every part of the system was the #1 priority</p>
+    <h3>2. Users wanted multi level permissions</h3>
+    <p>They wanted the ability to control anything and everything, down to indvidual files</p>
+    <h3>3. Users wanted the ability to assign a permission to multiple properties</h3>
+    <p>Users were looking for an easy way to assign a permission to multiple properties</p>
+    <label>Process</label>
+    <h3>User Personas</h3>
+    <p>For this study, there were 3 main user groups that we wanted to focus on</p>
+    <ul class="pdb-2">
+      <li>1. Office Staff Member</li>
+      <li>2. Property / Regional Manager</li>
+      <li>3. Upper Management / Admins</li>
+    </ul>
+    <div class="oversized-image">
+      <img src="images/perm-userstory.png">
+    </div>
+    <h3>User Workflow</h3>
+    <p>Our team gathered to gain insight from sales, support, and management to learn and understand more about the pain points. From there we figured out two workflow solutions on how permissions should work.</p>
+    <div class="oversized-image">
+      <img src="images/perm-workflow.png">
+    </div>
+    <p>Unsure on which workflow to go with, I've decided to look at other competitors to see how they incorporated permissions</p>
+    <h3>Learning From Others</h3>
+    <p>I started to dig around to see what other apps I used had permissions. I </p>
+    <img src="images/perm-comp.png">
+    <h3>What I've Learned From Other Apps</h3>
+    <ul>
+      <li><span class="bold">Competitors used roles as templates.</span> Competitors allowed admins to create roles and assign permissions for the role. After creating the role, admins then assign the role to the user.</li>
+      <li><span class="bold">User permission trumps all.</span> Along with roles, you could edit an individual permission. If the invididual permission was edited, then it would override the roles permission.</li>
+      <li><span class="bold">Edited roles update the users permission.</span> If the role is edited, it will automatically apply to the users permission, unless the individual user permission was edited.</li>
+    </ul>
+    <h3>Testing Each Workflow and Feedback</h3>
+    <p>Based on other apps, we've learned that workflow #2 was a more common practice. We wanted to be 100% sure, so we tested both workflows with current users who would have access to create and edit permissions.</p>
+    <ul>
+      <li><span class="bold">Workflow #1 would result in too many roles.</span> The feedback we got would be that the first workflow would result in too many roles. Having the folders and file permissions in the role would be too specific for each user.</li>
+      <li><span class="bold">Workflow #2 was simple and straightforward.</span> Users understood the workflow, and creating and assign a role was simple and easy to understand.</li>
+      <li><span class="bold">We were heading in the right direction.</span> This was the feature users were looking for. They wanted to fully customize a user permission and we were heading in the right direction.</li>
+    </ul>
+    <label>Design</label>
+    <h3 class="pdb-2">Role Dashboard</h3>
+    <img src="images/role-dashboard.png">
+    <p>In the Role Dashboard, admins can see current roles, create a new role, edit a current role, and learn about roles</p>
+    <h3 class="pdb-2">Create Role</h3>
+    <img src="images/role-create.png">
+    <p>When creating a role, admins can give it a name, and enable and disable permissions. the features are on the left so users can jump into a specific permission.</p>
+    <h3 class="pdb-2">Edit Users Permission</h3>
+    <img src="images/role-user.png">
+    <p>Admin can also edit a users permission. A users permission will override the roles permission.</p>
+    <h3 class="pdb-2">Adding a Property</h3>
+    <img src="images/role-search.png">
+    <p>Admins can search for a property (folder) to give access to.</p>
+    <h3 class="pdb-2">Assigned Property</h3>
+    <img src="images/role-property.png">
+    <p class="pdb-3">Admins can then go to property (folder) to give or deny access to. This overrides all other permissions.</p>
+    <div class="oversized-image-m">
+      <img src="images/permissions.png" class="pdb-3">
+    </div>
+    <div class="oversized-image-m">
+      <img src="images/role-2.png">
+    </div>
+  </section>
+
+</body>
+
+</html>
