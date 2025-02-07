@@ -1,46 +1,124 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Valentine's Cavapoo Wonderland</title>
+  <style>
+    /* Old school Geocities vibe */
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #ffccff;
+      /* A repeating retro pattern - you can change this URL to a true retro background */
+      background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      color: #000080;
+    }
 
-  <title>Dustin | Product Designer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="stylesheets/reset.css">
-  <link rel="stylesheet" href="stylesheets/screen.css">
+    /* Container with dashed border (old school!) */
+    .container {
+      width: 90%;
+      margin: 20px auto;
+      border: 5px dashed #ff69b4;
+      background-color: #ffffe0;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    /* Marquee banner styling */
+    .marquee-banner {
+      font-size: 24px;
+      color: #ff0000;
+      margin: 0;
+      padding: 10px 0;
+      background-color: #ffff99;
+    }
+
+    /* Valentine's Card Style */
+    .card {
+      background-color: #fff;
+      border: 2px solid #ff1493;
+      padding: 20px;
+      margin: 20px auto;
+      width: 80%;
+      max-width: 600px;
+      box-shadow: 5px 5px 5px #888888;
+    }
+
+    /* Heart styling with a blink animation (simulating the old <blink> tag) */
+    .heart {
+      font-size: 48px;
+      color: red;
+      animation: blink 1s step-start infinite;
+    }
+
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+
+    /* Spinning dog images */
+    .dog {
+      position: absolute;
+      width: 100px;
+      height: auto;
+      animation: spin 10s linear infinite;
+    }
+    
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    /* Positioning multiple dog images (feel free to adjust these positions) */
+    .dog1 { top: 10%; left: 5%; }
+    .dog2 { top: 20%; right: 5%; }
+    .dog3 { bottom: 15%; left: 10%; }
+    .dog4 { bottom: 10%; right: 10%; }
+    .dog5 { top: 50%; left: 0; }
+    .dog6 { top: 0; right: 50%; }
+
+    /* Styling for links and additional text */
+    a {
+      color: #0000ee;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
-
 <body>
 
-  <!-- .<nav>
-    <a href="index.html">
-      <header>Dustin Dong</header>
-    </a>
-    <ul>
-      <li>
-        <a href="mailto:dustin@worldonpause.com">Contact</a>
-      </li>
-      <li>
-        <a href="about.html">About</a>
-      </li>
-      <li>
-        <a href="Resume.pdf" target="_blank">Resume</a>
-      </li>
-      <li>
-        <a href="https://www.linkedin.com/in/dustindong/" target="_blank">LinkedIn</a>
-    </ul>
-  </nav>
+  <!-- Old school marquee banner -->
+  <marquee behavior="scroll" direction="left" scrollamount="5" class="marquee-banner">
+    Welcome to My Valentine's Cavapoo Wonderland! Enjoy the flashing fun and cute pups!
+  </marquee>
 
-  <section class="header">
-    <div class="header-wrapper">
-      <h2>Hi! I'm Dustin Dong, A New York City based <div class="bold">Product Designer</div> who loves the User Experience</h2>
-    <div>
-  </section>
-  -->
+  <!-- Spinning images of Blenheim Cavapoo (using waffle.jpg) all over the page -->
+  <img src="waffle.jpg" alt="Waffle the Cavapoo" class="dog dog1">
+  <img src="waffle.jpg" alt="Waffle the Cavapoo" class="dog dog2">
+  <img src="waffle.jpg" alt="Waffle the Cavapoo" class="dog dog3">
+  <img src="waffle.jpg" alt="Waffle the Cavapoo" class="dog dog4">
+  <img src="waffle.jpg" alt="Waffle the Cavapoo" class="dog dog5">
+  <img src="waffle.jpg" alt="Waffle the Cavapoo" class="dog dog6">
+
+  <div class="container">
+    <div class="card">
+      <div class="heart">❤️</div>
+      <h1>Happy Valentine's Day!</h1>
+      <p>I hope your day is filled with love, laughter, and lots of adorable Cavapoos!</p>
+    </div>
+
+    <!-- Additional old school elements -->
+    <p><font size="4">Check out my <a href="http://www.example.com">awesome website</a> for more fun!</font></p>
+    <!-- The <blink> tag is deprecated but added here for nostalgic purposes -->
+    <blink>This text is blinking! (If your browser supports it)</blink>
+    <br /><br />
+    <!-- Under Construction image (still a placeholder) -->
+    <img src="https://via.placeholder.com/468x60?text=Under+Construction" alt="Under Construction">
+  </div>
 
 </body>
-
 </html>
