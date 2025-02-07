@@ -15,6 +15,15 @@
       color: #000080;
     }
 
+    /* Marquee banner styling */
+    .marquee-banner {
+      font-size: 24px;
+      color: #ff0000;
+      margin: 0;
+      padding: 10px 0;
+      background-color: #ffff99;
+    }
+
     /* Container with dashed border (old school!) */
     .container {
       width: 90%;
@@ -26,15 +35,6 @@
       position: relative;
     }
 
-    /* Marquee banner styling */
-    .marquee-banner {
-      font-size: 24px;
-      color: #ff0000;
-      margin: 0;
-      padding: 10px 0;
-      background-color: #ffff99;
-    }
-
     /* Valentine's Card Style */
     .card {
       background-color: #fff;
@@ -44,9 +44,10 @@
       width: 80%;
       max-width: 600px;
       box-shadow: 5px 5px 5px #888888;
+      position: relative; /* For absolutely positioned roses */
     }
 
-    /* Bigger heart styling with blink animation (simulating <blink>) */
+    /* Bigger heart styling with blink animation */
     .heart {
       font-size: 72px;  /* Increased from 48px to 72px */
       color: red;
@@ -57,13 +58,14 @@
       50% { opacity: 0; }
     }
 
-    /* Spinning dog images with high z-index and reduced size */
+    /* Spinning waffle images (waffle.jpg) */
     .dog {
       position: absolute;
-      width: 150px; /* Reduced to 50% of the previous 300px size */
+      width: 150px;  /* Set to 150px */
       height: auto;
       animation: spin 10s linear infinite;
-      z-index: 9999; /* Ensures these images are on top of everything else */
+      z-index: 100000; /* Highest z-index so they always show */
+      opacity: 0.75;   /* 75% opacity */
     }
     
     @keyframes spin {
@@ -79,9 +81,32 @@
     .dog5 { top: 50%; left: 0; }
     .dog6 { top: 0; right: 50%; }
 
+    /* Static roses around the card (no flashing animation) */
+    .rose {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+    }
+    .rose.top-left {
+      top: -25px;
+      left: -25px;
+    }
+    .rose.top-right {
+      top: -25px;
+      right: -25px;
+    }
+    .rose.bottom-left {
+      bottom: -25px;
+      left: -25px;
+    }
+    .rose.bottom-right {
+      bottom: -25px;
+      right: -25px;
+    }
+
     /* Polaroid-style photo for ling.jpg */
     .polaroid {
-      width: 500px;  /* Fixed width */
+      width: 500px;  /* Fixed width on larger screens */
       background-color: white;
       padding: 10px;
       border: 1px solid #ccc;
@@ -101,6 +126,26 @@
     a:hover {
       text-decoration: underline;
     }
+
+    /* Mobile-friendly adjustments */
+    @media (max-width: 600px) {
+      .container {
+        width: 95%;
+        padding: 10px;
+      }
+      .marquee-banner {
+        font-size: 18px;
+      }
+      .polaroid {
+        width: 90%;
+      }
+      .card h1 {
+        font-size: 24px;
+      }
+      .card p {
+        font-size: 16px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -110,7 +155,7 @@
     Welcome to My Valentine's Cavapoo Wonderland! Enjoy the flashing fun and cute pups!
   </marquee>
 
-  <!-- Spinning images of Cavapoo (using waffle.jpg) with reduced size -->
+  <!-- Spinning images of Cavapoo (using waffle.jpg) -->
   <img src="waffle.jpg" alt="Waffle the Cavapoo" class="dog dog1">
   <img src="waffle.jpg" alt="Waffle the Cavapoo" class="dog dog2">
   <img src="waffle.jpg" alt="Waffle the Cavapoo" class="dog dog3">
@@ -121,13 +166,19 @@
   <div class="container">
     <div class="card">
       <div class="heart">❤️</div>
-      <h1>Happy Valentine's Day!</h1>
-      <p>I hope your day is filled with love, laughter, and lots of adorable Cavapoos!</p>
+      <h1>Happy Valentine's Day Ling!</h1>
+      <p>I hope your day is filled with love, laughter, and lots of Waffle!</p>
+      
+      <!-- Static roses around the card, using rose.gif -->
+      <img src="rose.gif" alt="Rose" class="rose top-left">
+      <img src="rose.gif" alt="Rose" class="rose top-right">
+      <img src="rose.gif" alt="Rose" class="rose bottom-left">
+      <img src="rose.gif" alt="Rose" class="rose bottom-right">
     </div>
 
     <!-- Polaroid-style photo -->
     <div class="polaroid">
-      <img src="ling.jpg" alt="Polaroid photo of Ling">
+      <img src="ling.JPG" alt="Polaroid photo of Ling">
     </div>
 
   </div>
