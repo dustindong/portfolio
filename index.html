@@ -1,187 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Valentine's Cavapoo Wonderland</title>
-  <style>
-    /* Old school Geocities vibe */
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: #ffccff;
-      background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
-      font-family: "Comic Sans MS", cursive, sans-serif;
-      color: #000080;
-    }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    /* Marquee banner styling */
-    .marquee-banner {
-      font-size: 24px;
-      color: #ff0000;
-      margin: 0;
-      padding: 10px 0;
-      background-color: #ffff99;
-    }
-
-    /* Container with dashed border (old school!) */
-    .container {
-      width: 90%;
-      margin: 20px auto;
-      border: 5px dashed #ff69b4;
-      background-color: #ffffe0;
-      padding: 20px;
-      text-align: center;
-      position: relative;
-    }
-
-    /* Valentine's Card Style */
-    .card {
-      background-color: #fff;
-      border: 2px solid #ff1493;
-      padding: 20px;
-      margin: 20px auto;
-      width: 80%;
-      max-width: 600px;
-      box-shadow: 5px 5px 5px #888888;
-      position: relative; /* For absolutely positioned roses */
-    }
-
-    /* Bigger heart styling with blink animation */
-    .heart {
-      font-size: 72px;  /* Increased from 48px to 72px */
-      color: red;
-      animation: blink 1s step-start infinite;
-    }
-
-    @keyframes blink {
-      50% { opacity: 0; }
-    }
-
-    /* Spinning waffle images (waffle.jpg) */
-    .dog {
-      position: absolute;
-      width: 150px;  /* Set to 150px */
-      height: auto;
-      animation: spin 10s linear infinite;
-      z-index: 100000; /* Highest z-index so they always show */
-      opacity: 0.75;   /* 75% opacity */
-    }
-    
-    @keyframes spin {
-      from { transform: rotate(0deg); }
-      to { transform: rotate(360deg); }
-    }
-
-    /* Positioning multiple dog images */
-    .dog1 { top: 10%; left: 5%; }
-    .dog2 { top: 20%; right: 5%; }
-    .dog3 { bottom: 15%; left: 10%; }
-    .dog4 { bottom: 10%; right: 10%; }
-    .dog5 { top: 50%; left: 0; }
-    .dog6 { top: 0; right: 50%; }
-
-    /* Static roses around the card (no flashing animation) */
-    .rose {
-      width: 50px;
-      height: 50px;
-      position: absolute;
-    }
-    .rose.top-left {
-      top: -25px;
-      left: -25px;
-    }
-    .rose.top-right {
-      top: -25px;
-      right: -25px;
-    }
-    .rose.bottom-left {
-      bottom: -25px;
-      left: -25px;
-    }
-    .rose.bottom-right {
-      bottom: -25px;
-      right: -25px;
-    }
-
-    /* Polaroid-style photo for ling.jpg */
-    .polaroid {
-      width: 500px;  /* Fixed width on larger screens */
-      background-color: white;
-      padding: 10px;
-      border: 1px solid #ccc;
-      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-      margin: 20px auto;
-    }
-    .polaroid img {
-      width: 100%;  /* Makes the image fill the polaroid container */
-      display: block;
-    }
-
-    /* Styling for links and additional text */
-    a {
-      color: #0000ee;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-
-    /* Mobile-friendly adjustments */
-    @media (max-width: 600px) {
-      .container {
-        width: 95%;
-        padding: 10px;
-      }
-      .marquee-banner {
-        font-size: 18px;
-      }
-      .polaroid {
-        width: 90%;
-      }
-      .card h1 {
-        font-size: 24px;
-      }
-      .card p {
-        font-size: 16px;
-      }
-    }
-  </style>
+  <title>Dustin | Product Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheets/reset.css">
+  <link rel="stylesheet" href="stylesheets/screen.css">
 </head>
+
 <body>
 
-  <!-- Old school marquee banner -->
-  <marquee behavior="scroll" direction="left" scrollamount="5" class="marquee-banner">
-    Welcome to My Valentine's Cavapoo Wonderland! Enjoy the flashing fun and cute pups!
-  </marquee>
+  <nav>
+    <a href="index.html">
+      <header>Dustin Dong</header>
+    </a>
+    <ul>
+      <li>
+        <a href="mailto:dustin@worldonpause.com">Contact</a>
+      </li>
+      <li>
+        <a href="about.html">About</a>
+      </li>
+      <li>
+        <a href="Resume.pdf" target="_blank">Resume</a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/dustindong/" target="_blank">LinkedIn</a>
+    </ul>
+  </nav>
 
-  <!-- Spinning images of Cavapoo (using waffle.jpg) -->
-  <img src="waffle.jpg" alt="Waffle the Cavapoo" class="dog dog1">
-  <img src="waffle.jpg" alt="Waffle the Cavapoo" class="dog dog2">
-  <img src="waffle.jpg" alt="Waffle the Cavapoo" class="dog dog3">
-  <img src="waffle.jpg" alt="Waffle the Cavapoo" class="dog dog4">
-  <img src="waffle.jpg" alt="Waffle the Cavapoo" class="dog dog5">
-  <img src="waffle.jpg" alt="Waffle the Cavapoo" class="dog dog6">
+  <section class="header">
+    <div class="header-wrapper">
+      <h2>Hi! I'm Dustin Dong, A New York City based <div class="bold">Product Designer</div> who loves the User Experience</h2>
+    <div>
+  </section>
 
-  <div class="container">
-    <div class="card">
-      <div class="heart">❤️</div>
-      <h1>Happy Valentine's Day Ling!</h1>
-      <p>I hope your day is filled with love, laughter, and lots of Waffle!</p>
-      
-      <!-- Static roses around the card, using rose.gif -->
-      <img src="rose.gif" alt="Rose" class="rose top-left">
-      <img src="rose.gif" alt="Rose" class="rose top-right">
-      <img src="rose.gif" alt="Rose" class="rose bottom-left">
-      <img src="rose.gif" alt="Rose" class="rose bottom-right">
+  <section class="work">
+    <h3>Case Studies</h3>
+    <div class="case-study-container pdb-3">
+      <a href="lfa.html">
+        <img src="images/lfa-header-3.png">
+      </a>
+      <div class="case-study-text">
+        <label>Lease File Audits</label>
+        <div class="case-study-tools">
+          Research • UX / UI • HTML / CSS / JS
+        </div>
+        <div class="case-study-context">
+          A tool to help users automate Lease File Audits
+        </div>
+      </div>
+    </div>
+    <div class="case-study-container pdb-3">
+      <a href="permissions.html">
+        <img src="images/perm-splash.png">
+      </a>
+      <div class="case-study-text">
+        <label>Permissions Redesign</label>
+        <div class="case-study-tools">
+          Research • UX / UI • HTML / CSS / JS
+        </div>
+        <div class="case-study-context">
+          A redesign of our user permissions
+        </div>
+      </div>
+    </div>
+    <div class="case-study-container pdb-3">
+      <a href="reports.html">
+        <img src="images/report-splash.png">
+      </a>
+      <div class="case-study-text">
+        <label>Scheduled Reports</label>
+        <div class="case-study-tools">
+          Research • UX / UI
+        </div>
+        <div class="case-study-context">
+          A feature that allows users to setup scheduled reports
+        </div>
+      </div>
     </div>
 
-    <!-- Polaroid-style photo -->
-    <div class="polaroid">
-      <img src="ling.JPG" alt="Polaroid photo of Ling">
+    <h3 class="pd-top-3">Other UI Designs</h3>
+    <div class="case-study-container pdb-3">
+      <a href="images/billing-dashboard.png" target="_blank">
+        <img src="images/billing-splash.png">
+      </a>
+      <div class="case-study-text">
+        <label>Billing Dashboard</label>
+      </div>
     </div>
-
-  </div>
+    <div class="case-study-container pdb-3">
+      <a href="images/marketing-page.png" target="_blank">
+        <img src="images/marketing-splash.png">
+      </a>
+      <div class="case-study-text">
+        <label>Marketing Pricing Page</label>
+      </div>
+    </div>
+    <div class="case-study-container pdb-3">
+      <a href="images/weatherapp-big.png" target="_blank">
+        <img src="images/weather-splash.png">
+      </a>
+      <div class="case-study-text">
+        <label>Weather App</label>
+      </div>
+    </div>
+    <div class="case-study-container pdb-3">
+      <a href="images/subway-app-big.png" target="_blank">
+        <img src="images/subway-splash.png">
+      </a>
+      <div class="case-study-text">
+        <label>Subway App</label>
+      </div>
+    </div>
+  </section>
 
 </body>
+
 </html>
